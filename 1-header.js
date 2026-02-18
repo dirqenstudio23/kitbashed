@@ -1,7 +1,7 @@
 class HeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-       <div class="js-responsive-nav">
+      <div class="js-responsive-nav">
     <div class="responsive-nav">
       <div class="close-responsive-click-area js-close-responsive-nav">
         <div class="close-responsive-button"></div>
@@ -73,10 +73,11 @@ class HeaderComponent extends HTMLElement {
           </div>
         </div>
     </header> 
-    <div class="header-placeholder"></div>
+  <div class="header-placeholder"></div>
     `;
   }
 }
 
 
 customElements.define('site-header', HeaderComponent);
+
