@@ -1,15 +1,6 @@
 class HeaderComponent extends HTMLElement {
-  connectedCallback() { 
-    const shadow = this.attachShadow({ mode: 'open' });
-    
-    shadow.innerHTML = `
-      <style>
-        site-header {
-  display: block;
-  width: 100%;
-}
-      </style>
-      
+  connectedCallback() {  
+    this.innerHTML = `
       <div class="js-responsive-nav">
         <div class="responsive-nav">
           <div class="close-responsive-click-area js-close-responsive-nav">
