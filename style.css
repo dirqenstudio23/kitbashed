@@ -1408,6 +1408,9 @@ object-fit: contain !important;
     .close-responsive-button {
        left: 12%; 
     }
+        .site-header {
+         margin-top: -17px;
+    }
 }
 
 
