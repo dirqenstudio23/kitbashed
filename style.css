@@ -17,31 +17,36 @@
 }
 
 @font-face {
-    font-family: 'Helvetica Neue Regular';
+    font-family: 'Helvetica Neue';
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue Regular'), url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueRegular.woff2') format('woff2');
-    }
-    
-    @font-face {
-    font-family: 'Helvetica Neue Italic';
+    font-weight: 400;
+    src: local('Helvetica Neue Regular'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Helvetica Neue Italic'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue Italic'), url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueItalic.woff2') format('woff2');
-    }
- @font-face {
-    font-family: 'Helvetica Neue Bold';
+    font-weight: 700;
+    src: local('Helvetica Neue Bold'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
     font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue Bold'), url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueBold.woff2') format('woff2');
-    }
-    
-    @font-face {
-    font-family: 'Helvetica Neue Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Helvetica Neue Medium'), url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueMedium.woff2') format('woff2');
-    }
+    font-weight: 500;
+    src: local('Helvetica Neue Medium'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueMedium.woff2') format('woff2');
+}
 
 .standard-modules .text {
     float: left;
@@ -841,7 +846,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__card-title {
-   font-family: 'Helvetica Neue Medium';
+   font-family: 'Helvetica Neue Medium' Arial, sans-serif;
     font-style: normal;
     text-align: left;
     text-transform: none;
@@ -900,7 +905,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__card-list-item {
-       font-family: 'Helvetica Neue Regular';
+       font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 26px;
     font-style: normal;
     text-align: left;
@@ -957,7 +962,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__bottom-title {
-    font-family: 'Helvetica Neue Regular';
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 28px;
     line-height: 37px;
     margin-bottom: 30px;
@@ -976,7 +981,7 @@ object-fit: contain !important;
     transition: all 0.3s ease;
     margin-bottom: 20px;
     display: inline-block;
-    font-family: 'Helvetica Neue Regular';
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .rolling-cards-module__cta-button:hover {
