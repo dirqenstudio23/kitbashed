@@ -992,7 +992,7 @@ object-fit: contain !important;
 .rolling-cards-module__download-text {
     font-size: 14px;
     color: #999;
-    font-family: 'Helvetica Neue Regular';
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .rolling-cards-module__download-text a {
