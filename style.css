@@ -847,6 +847,7 @@ object-fit: contain !important;
 
 .rolling-cards-module__card-title {
    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+   font-weight: 500;
     font-style: normal;
     text-align: left;
     text-transform: none;
@@ -908,6 +909,7 @@ object-fit: contain !important;
        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 26px;
     font-style: normal;
+    font-weight: 400;
     text-align: left;
     text-transform: none;
     margin-top: 10px;
@@ -963,6 +965,7 @@ object-fit: contain !important;
 
 .rolling-cards-module__bottom-title {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
     font-size: 28px;
     line-height: 37px;
     margin-bottom: 30px;
@@ -976,7 +979,7 @@ object-fit: contain !important;
     border: none;
     padding: 15px 40px;
     font-size: 16px;
-    font-weight: bold;
+     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 20px;
@@ -991,6 +994,7 @@ object-fit: contain !important;
 
 .rolling-cards-module__download-text {
     font-size: 14px;
+     font-weight: 400;
     color: #999;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
