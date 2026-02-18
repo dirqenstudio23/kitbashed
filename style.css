@@ -1413,7 +1413,7 @@ object-fit: contain !important;
        left: 12%; 
     }
         .site-header {
-         margin-top: -17px;
+         margin-top: 0px;
     }
 }
 
