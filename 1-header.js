@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
     
     shadow.innerHTML = `
       <style>
-       site-header {
+        site-header {
   display: block;
   width: 100%;
 }
