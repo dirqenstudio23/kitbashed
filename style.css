@@ -52,6 +52,10 @@ body {
          url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueMedium.woff2') format('woff2');
 }
 
+.site-footer {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
 .standard-modules .text {
     float: left;
     padding-bottom: 0px;
