@@ -905,7 +905,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__card-list-item {
-       font-family: 'Helvetica Neue', Arial, sans-serif;
+       font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 26px;
     font-style: normal;
     text-align: left;
@@ -962,7 +962,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__bottom-title {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 28px;
     line-height: 37px;
     margin-bottom: 30px;
@@ -981,7 +981,7 @@ object-fit: contain !important;
     transition: all 0.3s ease;
     margin-bottom: 20px;
     display: inline-block;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .rolling-cards-module__cta-button:hover {
