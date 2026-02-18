@@ -1468,3 +1468,52 @@ object-fit: contain !important;
 }
 
 
+   .carousel-container::before,.carousel-container::after {
+    
+    background: linear-gradient(to right, rgb(0 0 0 / 0%), transparent) !important;
+}
+@media (max-width: 768px) {
+    .carousel-track {
+        gap: 5px !important;
+    }
+        .logo-item {
+        padding: 20px 10px !important;
+    }
+}
+    @media (min-width: 1440px) {
+            .carousel-container {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .carousel-track {
+                gap: 6px;
+            }
+
+            .logo-item {
+                        min-width: 220px;
+        height: 150px;
+        padding: 20px 5px;
+            }
+        }
+    @media (min-width: 992px) and (max-width: 1180px) {
+.rolling-cards-module__card-title {
+        font-size: 33px;
+    }
+}
+      .carousel-container {
+    padding: 15px 0 !important;
+   
+}
+     .masthead {
+   min-height: 380px;
+       padding-bottom: 0 !important;
+    padding-top: 0 !important; 
+} 
+   .link-transition {
+display: block !important;
+  
+}
+.site-header {
+  max-width: 100% !important;
+}
