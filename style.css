@@ -846,7 +846,7 @@ object-fit: contain !important;
 }
 
 .rolling-cards-module__card-title {
-   font-family: 'Helvetica Neue Medium' Arial, sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-style: normal;
     text-align: left;
     text-transform: none;
@@ -1144,6 +1144,12 @@ object-fit: contain !important;
 @media (min-width: 992px) and (max-width: 1180px) {
     .rolling-cards-module__card-title {
         font-size: 33px;
+    }
+    .rolling-cards-module__card {
+    padding: 50px 50px;
+    }
+    .rolling-cards-module__card-list-item {
+   font-size: 20px;
     }
 }
 
