@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  fetch('/navbar.html')
+  fetch('https://dirqenstudio23.github.io/kitbashed/navbar/navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
