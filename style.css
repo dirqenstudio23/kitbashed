@@ -1,505 +1,1470 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ page.name }} | {{ store.name }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/697fc5151f68d1ab5acd1f76.css" type="text/css">
-      <link rel="stylesheet" href="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/697fc56866e7cae456af2af0.css" type="text/css">
-      
-      <!-- New CSS -->
-    <link rel="stylesheet" href="https://dirqenstudio23.github.io/kitbashed/style.css" type="text/css">
-     
+/* @import url(https://db.onlinewebfonts.com/c/0d49fc455f4a8951a42daf952412a713?family=Helvetica+Neue+Regular);
 
-      <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
-   
-    <style>
-        .carousel-container::before,.carousel-container::after {
-    
-    background: linear-gradient(to right, rgb(0 0 0 / 0%), transparent) !important;
+.element {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
-@media (max-width: 768px) {
-    .carousel-track {
-        gap: 5px !important;
-    }
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5'); */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.medium-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.regular-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Helvetica Neue Regular'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Helvetica Neue Italic'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Helvetica Neue Bold'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Helvetica Neue Medium'),
+         url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueMedium.woff2') format('woff2');
+}
+
+.site-footer {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.standard-modules .text {
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    max-width: 100% !important;
+    width: 100%;
+}
+
+     .p-4 {
+   margin-left: 10% !important;
+    margin-right: 10% !important;
+    width: 80% !important;
+}
+
+
+
+    .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .carousel-container::before,
+        .carousel-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 90px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .carousel-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(0 0 0), transparent);
+        }
+
+        .carousel-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(0 0 0), transparent);
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 60px;
+            animation: scroll 60s linear infinite;
+            width: fit-content;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
         .logo-item {
-        padding: 20px 10px !important;
-    }
-}
-    @media (min-width: 1440px) {
-            .carousel-container {
-                max-width: 100%;
-                margin: 0 auto;
-            }
+            flex-shrink: 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 220px;
+            height: 140px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
+        .logo-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
             .carousel-track {
-                gap: 6px;
+                gap: 40px;
             }
 
             .logo-item {
-                        min-width: 220px;
-        height: 150px;
-        padding: 20px 5px;
+                min-width: 180px;
+                height: 120px;
+                padding: 20px 30px;
+            }
+
+            .carousel-container::before,
+            .carousel-container::after {
+                width: 100px;
             }
         }
-    @media (min-width: 992px) and (max-width: 1180px) {
-.rolling-cards-module__card-title {
-        font-size: 33px;
+
+        @media (max-width: 480px) {
+            .carousel-track {
+                gap: 30px;
+                animation: scroll 50s linear infinite;
+            }
+
+            .logo-item {
+                min-width: 140px;
+                height: 100px;
+                padding: 15px 20px;
+            }
+
+            .carousel-container::before,
+            .carousel-container::after {
+                width: 50px;
+            }
+        }
+
+        .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+        }
+
+        .site-footer .rich-text div {
+               font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+        }
+        
+        .site-footer {
+                display: flex;
+    flex-direction: column;
+        align-items: flex-start;
+        }
+        .site-footer .logo {
+            padding-left: 0 !important;
+        }
+        .site-footer .logo-wrap {
+                width: 100% !important;
+        }
+        .footer-info {
+
+            display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    padding-top: 40px; 
+        }
+
+        .pf-footer-social li {
+                padding-top: 0 !important;
+        }
+
+        .footer-text {
+            text-align: left;
+        }
+
+        .gap-70 {
+    gap: 70px !important;
+        }
+
+        .img-gallery-module-2025 * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container utama */
+        .img-gallery-module-2025 {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* Judul Gallery */
+        .img-gallery-title-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        /* Grid Gallery */
+        .img-gallery-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .img-gallery-grid-container-column {
+                display: flex !important;
+    gap: 20px;
+    flex-direction: column;
+        }
+
+        /* Item Gallery */
+        .img-gallery-item-wrapper {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .img-gallery-item-wrapper-column {
+                aspect-ratio: 8 / 3 !important;
+                    box-shadow: 0 4px 15px rgb(0 0 0 / 0%) !important;
+        }
+
+        .img-gallery-item-wrapper:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Gambar */
+        .img-gallery-image-element {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        
+        .img-gallery-image-element-column {
+object-fit: contain !important;
+        }
+        .img-gallery-item-wrapper:hover .img-gallery-image-element {
+            transform: scale(1.1);
+        }
+
+        /* Overlay */
+        .img-gallery-overlay-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .img-gallery-item-wrapper:hover .img-gallery-overlay-layer {
+            opacity: 1;
+        }
+
+        .img-gallery-overlay-text {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Lightbox/Modal */
+        .img-gallery-lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 99999;
+            animation: img-gallery-fade-in 0.3s ease;
+        }
+
+        .img-gallery-lightbox-modal.img-gallery-active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes img-gallery-fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Konten Lightbox */
+        .img-gallery-lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            animation: img-gallery-zoom-in 0.3s ease;
+        }
+
+        @keyframes img-gallery-zoom-in {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .img-gallery-lightbox-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tombol Close */
+        .img-gallery-close-button {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: 300;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .img-gallery-close-button:hover {
+            transform: rotate(90deg);
+        }
+
+        /* Tombol Navigasi */
+        .img-gallery-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            font-size: 30px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+            backdrop-filter: blur(5px);
+        }
+
+        .img-gallery-nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .img-gallery-prev-button {
+            left: 20px;
+        }
+
+        .img-gallery-next-button {
+            right: 20px;
+        }
+
+        /* Counter */
+        .img-gallery-counter-display {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .img-gallery-title-heading {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .img-gallery-grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+
+            .img-gallery-nav-button {
+                font-size: 24px;
+                padding: 10px 15px;
+            }
+
+            .img-gallery-prev-button {
+                left: 10px;
+            }
+
+            .img-gallery-next-button {
+                right: 10px;
+            }
+
+            .img-gallery-lightbox-content {
+                max-width: 95%;
+            }
+
+            .img-gallery-close-button {
+                font-size: 35px;
+                top: -35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img-gallery-grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .img-gallery-title-heading {
+                font-size: 1.5rem;
+            }
+        }
+
+
+        .brand-asset-module-2025 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.brand-asset-module-2025 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Content wrapper with gradient background */
+.brand-asset-content-wrapper {
+    background: linear-gradient(135deg, #6B4CE6 0%, #8B5CF6 50%, #7C3AED 100%);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(107, 76, 230, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-asset-content-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(107, 76, 230, 0.4);
+}
+
+/* Title styling */
+.brand-asset-title-text {
+    color: #d1fb2f;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(209, 251, 47, 0.3);
+    letter-spacing: 0.5px;
+}
+
+/* Task list container */
+.brand-asset-task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.brand-asset-task-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.brand-asset-task-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-140%);
+    width: 20px;
+    height: 20px;
+    background-image: url('https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/6991578ec086651d4b04621c.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .brand-asset-task-item::before { 
+        transform: translateY(-125%);
+    width: 15px;
+    height: 15px;
+    }
+    .brand-asset-content-wrapper {
+        padding: 30px 25px;
+        border-radius: 10px;
+    }
+
+    .brand-asset-title-text {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .brand-asset-task-item {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .brand-asset-task-input {
+        font-size: 16px;
     }
 }
-      .carousel-container {
-    padding: 15px 0 !important;
-   
+
+@media (max-width: 480px) {
+    .brand-asset-content-wrapper {
+        padding: 25px 20px;
+        border-radius: 8px;
+    }
+
+    .brand-asset-title-text {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .brand-asset-task-item {
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .brand-asset-task-item::before {
+        font-size: 20px;
+    }
+
+    .brand-asset-task-input {
+        font-size: 15px;
+    }
 }
-     .masthead {
-   min-height: 380px;
-       padding-bottom: 0 !important;
-    padding-top: 0 !important; 
-} 
-   .link-transition {
-display: block !important;
+
+/* Animation keyframes */
+@keyframes brand-asset-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brand-asset-module-2025.brand-asset-animated .brand-asset-content-wrapper {
+    animation: brand-asset-fade-in 0.6s ease;
+}
+
+
+/* Reset for module only */
+.cta-thankyou-module-2025 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.cta-thankyou-module-2025 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Content wrapper with gradient background */
+.cta-thankyou-content-wrapper {
+    background: linear-gradient(135deg, #6B4CE6 0%, #8B5CF6 50%, #7C3AED 100%);
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(107, 76, 230, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-thankyou-content-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(107, 76, 230, 0.4);
+}
+
+/* Main heading */
+.cta-thankyou-heading-text {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+}
+
+/* Subheading / description text */
+.cta-thankyou-description-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* CTA Button */
+.cta-thankyou-button-link {
+    font-family: helvetica, sans-serif !important;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 14px 40px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover effect */
+.cta-thankyou-button-link:hover {
+    background: #ffffff;
+    color: #7C3AED;
+    transform: translateY(-2px);
+}
+
+/* Button active/click effect */
+.cta-thankyou-button-link:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Ripple effect on button */
+.cta-thankyou-button-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.cta-thankyou-button-link:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cta-thankyou-content-wrapper {
+        padding: 40px 30px;
+        border-radius: 10px;
+    }
+
+    .cta-thankyou-heading-text {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .cta-thankyou-description-text {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .cta-thankyou-button-link {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-thankyou-content-wrapper {
+        padding: 35px 25px;
+        border-radius: 8px;
+    }
+
+    .cta-thankyou-heading-text {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .cta-thankyou-description-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .cta-thankyou-button-link {
+        padding: 11px 30px;
+        font-size: 15px;
+    }
+}
+
+/* Animation keyframes */
+@keyframes cta-thankyou-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-thankyou-module-2025.cta-thankyou-animated .cta-thankyou-content-wrapper {
+    animation: cta-thankyou-fade-in 0.8s ease;
+}
+
+/* Pulse animation for button */
+@keyframes cta-thankyou-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.cta-thankyou-button-link.cta-thankyou-pulse {
+    animation: cta-thankyou-pulse 2s infinite;
+}
+.rolling-cards-module * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rolling-cards-module {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.rolling-cards-module__container {
+    width: 100%;
+}
+
+.rolling-cards-module__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 60px;
+}
+
+.rolling-cards-module__card {
+    background: #fff;
+    color: #000;
+    padding: 80px 96px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+     
+}
+
+.rolling-cards-module__card-title {
+   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+   font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    text-transform: none;
+    margin: 0 0 56px;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.rolling-cards-module__card-title .rolling-cards-module__highlight {
+    transition: color 0.4s ease;
+}
+
+.rolling-cards-module__card .rolling-cards-module__highlight {
+    transition: color 0.4s ease;
+}
+
+.rolling-cards-module__card--1 .rolling-cards-module__highlight {
+    color: #a4d233;
+}
+
+.rolling-cards-module__card--2 .rolling-cards-module__highlight {
+    color: #9d4edd;
+}
+
+.rolling-cards-module__card--3 .rolling-cards-module__highlight {
+    color: #ff4757;
+}
+
+.rolling-cards-module.rcm-hover-green .rolling-cards-module__card .rolling-cards-module__highlight {
+    color: #a4d233 !important;
+}
+
+.rolling-cards-module.rcm-hover-green .rolling-cards-module__card--1:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module.rcm-hover-purple .rolling-cards-module__card .rolling-cards-module__highlight {
+    color: #9d4edd !important;
+}
+
+.rolling-cards-module.rcm-hover-purple .rolling-cards-module__card--2:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module.rcm-hover-red .rolling-cards-module__card .rolling-cards-module__highlight {
+    color: #ff4757 !important;
+}
+
+.rolling-cards-module.rcm-hover-red .rolling-cards-module__card--3:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module__card-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rolling-cards-module__card-list-item {
+       font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.rolling-cards-module__card-list-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.rolling-cards-module__card--1:hover {
+    background: #a4d233;
+    color: #fff;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.rolling-cards-module__card--1:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module__card--2:hover {
+    background: #9d4edd;
+    color: #fff;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.rolling-cards-module__card--2:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module__card--3:hover {
+    background: #ff4757;
+    color: #fff;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.rolling-cards-module__card--3:hover .rolling-cards-module__highlight {
+    color: #000 !important;
+}
+
+.rolling-cards-module__bottom-section {
+    background: transparent;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+}
+
+.rolling-cards-module__bottom-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    font-weight: 400;
+}
+
+.rolling-cards-module__cta-button {
+    background: #a4d233;
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.rolling-cards-module__cta-button:hover {
+    background: #8fba2d;
+    transform: translateY(-2px);
+}
+
+.rolling-cards-module__download-text {
+    font-size: 14px;
+     font-weight: 400;
+    color: #999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.rolling-cards-module__download-text a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+.rolling-cards-module__download-text a:hover {
+    text-decoration: underline;
+}
+
+.rolling-cards-module.rcm-theme-green .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+    color: #a4d233;
+}
+
+.rolling-cards-module.rcm-theme-purple .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+    color: #9d4edd;
+}
+
+.rolling-cards-module.rcm-theme-red .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+    color: #ff4757;
+}
+
+/* Image showcase - Default Desktop */
+.rolling-cards-module__image-showcase {
+    z-index: 999;
+    position: absolute;
+    right: -90px;
+    bottom: -45px;
+    width: 1000px;
+    height: 425px;
+    transition: all 0.5s ease;
+}
+
+.rolling-cards-module__showcase-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolling-cards-module__showcase-item--active {
+    opacity: 1;
+}
+
+.rolling-cards-module__showcase-item img {
+    max-width: 100%;
+    height: 525px;
+    max-height: 525px;
+    object-fit: contain;
+}
+
+.rolling-cards-module.rcm-theme-green .rolling-cards-module__cta-button {
+    background: #a4d233;
+}
+
+.rolling-cards-module.rcm-theme-purple .rolling-cards-module__cta-button {
+    background: #9d4edd;
+}
+
+.rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
+    background: #ff4757;
+}
+
+.img-float {
+    display: block;
+    margin: 20px auto 0px;
+    height: 425px;
+    width: auto;
+    animation: 3s infinite alternate floating;
+}
+
+.shadow {
+    height: 2px;
+    display: block;
+    margin: 15px auto;
+    animation: 3s infinite alternate shadow;
+}
+
+/* Mobile card image - Hidden by default */
+.rolling-cards-module__card-image {
+    display: none;
+}
+
+@keyframes floating {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        width: 180px;
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, .8);
+    }
+    50% {
+        width: 150px;
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, .5);
+    }
+    100% {
+        width: 180px;
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, .8);
+    }
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Large Desktop (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .rolling-cards-module__image-showcase {
+        right: -120px;
+        width: 800px;
+    }
+}
+
+/* Medium Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .rolling-cards-module__image-showcase {
+        position: absolute;
+        right: -80px;
+        bottom: 35px;
+        width: 600px;
+        height: 350px;
+    }
+    
+    .rolling-cards-module__showcase-item img {
+        height: 350px;
+        max-height: 350px;
+    }
+    
+    .img-float {
+        height: 350px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1180px) {
+    .rolling-cards-module__card-title {
+        font-size: 33px;
+    }
+    .rolling-cards-module__card {
+    padding: 50px 50px;
+    }
+    .rolling-cards-module__card-list-item {
+   font-size: 20px;
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .rolling-cards-module__grid {
+        gap: 10px;
+    }
+    
+    .rolling-cards-module__card {
+        padding: 30px 20px;
+        min-height: 220px;
+    }
+    
+    .rolling-cards-module__card-title {
+        font-size: 20px;
+    }
+    
+    .rolling-cards-module__bottom-section {
+        padding: 30px 20px !important;
+    }
+    
+    .rolling-cards-module__image-showcase {
+        position: static !important;
+        margin-top: 40px;
+        width: 100% !important;
+        height: 300px;
+        right: auto !important;
+        bottom: auto !important;
+    }
+    
+    .rolling-cards-module__showcase-item {
+        position: relative;
+        height: 300px;
+        position: absolute !important;
+    top: 0;
+    left: 450px;
+    width: 250px !important;
+    }
+    
+    .rolling-cards-module__showcase-item img {
+        height: 300px;
+        max-height: 300px;
+    }
+    
+    .img-float {
+        height: 300px;
+    }
+}
+
+/* Tablet Portrait & Mobile Landscape (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .rolling-cards-module {
+        padding: 15px;
+    }
+    
+    .rolling-cards-module__grid {
+        grid-template-columns: 1fr !important;
+        gap: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .rolling-cards-module__card {
+        padding: 30px 20px !important;
+        min-height: auto !important;
+        border-bottom: none !important;
+    }
+    
+    .rolling-cards-module__card-title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .rolling-cards-module__card-list-item {
+        font-size: 16px !important;
+    }
+    
+    /* Show image below each card on mobile */
+    .rolling-cards-module__card-image {
+        display: block !important;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .rolling-cards-module__card-image img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        animation: 3s infinite alternate floating-mobile;
+    }
+    
+    .rolling-cards-module__card-image .shadow {
+        width: 150px;
+        height: 2px;
+        margin: 15px auto;
+        animation: 3s infinite alternate shadow-mobile;
+    }
+    
+    /* Hide bottom section on mobile */
+    .rolling-cards-module__bottom-section {
+        display: none !important;
+    }
+    
+    @keyframes floating-mobile {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-8px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    
+    @keyframes shadow-mobile {
+        0% {
+            width: 150px;
+            box-shadow: 0px 8px 6px rgba(0, 0, 0, .7);
+        }
+        50% {
+            width: 130px;
+            box-shadow: 0px 8px 6px rgba(0, 0, 0, .4);
+        }
+        100% {
+            width: 150px;
+            box-shadow: 0px 8px 6px rgba(0, 0, 0, .7);
+        }
+    }
+}
+
+/* Mobile Portrait (less than 480px) */
+@media (max-width: 479px) {
+    .rolling-cards-module {
+        padding: 15px;
+    }
+    
+    .rolling-cards-module__grid {
+        grid-template-columns: 1fr !important;
+        gap: 200px;
+        margin-bottom: 0px;
+    }
+    
+    .rolling-cards-module__card {
+        padding: 30px 20px !important;
+        min-height: auto !important;
+        border-bottom: none !important;
+                height: 390px;
+    }
+    .site-footer {
+       padding-top: 280px;
+    }
+    
+    .masthead {
+    min-height: auto !important;
+    }
+    .rolling-cards-module__card-title {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .rolling-cards-module__card-list-item {
+        font-size: 15px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    /* Show image below each card on mobile */
+    .rolling-cards-module__card-image {
+        display: block !important;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .rolling-cards-module__card-image img {
+        width: 95%;
+        max-width: 350px;
+        height: auto;
+        animation: 3s infinite alternate floating-mobile;
+    }
+    
+    .rolling-cards-module__card-image .shadow {
+        width: 120px;
+        height: 2px;
+        margin: 12px auto;
+        animation: 3s infinite alternate shadow-mobile;
+    }
+    
+    /* Hide bottom section on mobile */
+    .rolling-cards-module__bottom-section {
+        display: none !important;
+    }
+    
+    @keyframes floating-mobile {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-6px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    
+    @keyframes shadow-mobile {
+        0% {
+            width: 120px;
+            box-shadow: 0px 6px 5px rgba(0, 0, 0, .6);
+        }
+        50% {
+            width: 100px;
+            box-shadow: 0px 6px 5px rgba(0, 0, 0, .3);
+        }
+        100% {
+            width: 120px;
+            box-shadow: 0px 6px 5px rgba(0, 0, 0, .6);
+        }
+    }
+}
+
+/* Extra Small Mobile (less than 360px) */
+@media (max-width: 359px) {
+    .rolling-cards-module__card-title {
+        font-size: 22px !important;
+    }
+    
+    .rolling-cards-module__card-image img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 932px) {
+        .responsive-nav { 
+        padding: 55px 13% 0px !important;
+        }
+     .responsive-nav .page-title, .responsive-nav .gallery-title {
+        padding: 0 0 8px !important;
+        text-align: left !important;
+    }
+        .responsive-nav nav { 
+        margin: 20px 0 !important;
+    }
+    .close-responsive-button {
+       left: 12%; 
+    }
+        .site-header {
+         margin-top: 0px;
+    }
+        .masthead {
+       min-height: auto !important;
+    }
+}
+
+
+/* Nav Text Container */
+.nav-text { 
+  color: #fff;
+  padding-top: 20px;
   
+  font-size: 13px;
+  line-height: 1.5;
 }
-.site-header {
-  max-width: 100% !important;
-}
- </style>
-    {{ head_content }}
-  </head>
-  <body id="{{ page.permalink }}" class="{{ page.category }}">
-    <site-header></site-header>
-    <script src="https://dirqenstudio23.github.io/kitbashed/1-header.js"></script>
-      <div class="masthead" data-context="page.masthead" data-hover-hint="mastheadOptions" data-hover-hint-placement="top-start">
-
-        <div class="masthead-contents">
-          <div class="masthead-text js-masthead-text">
-            <div data-context="page.masthead" data-hover-hint="mastheadTitle"><h1 decorator="inlineTextEditable" contenteditable="false" class="js-inline-text-editable preserve-whitespace main-text rich-text module-text" data-text-keypath="customizations.masthead.title.text" value="The world isn't two dimensonal, neither is
-our work.">The world isn't two dimensonal, neither is
-our work.</h1></div>
-            
-            
-          </div>
-        </div>
-      </div>
-  <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content e2e-site-content">
-        <main>
-  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
-    <section class="page standard-modules">
-      <div class="page-content js-page-content" data-context="pages" data-identity="id:p696ab75a0de2fed0e21055d65b40c5f8bd16284e3f12fb201e294">
-        <div id="project-canvas" class="js-project-modules modules content">
-          <div id="project-modules">
-              
-              
-              
-              
-            <div class="carousel-container">
-            
-              <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-                <!-- First set of logos -->
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/6991aa0e899b88e2a3c0c25d.png" alt="KB_WebsiteLogos_2026-01" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d7496fb35a45fb.png" alt="KB_WebsiteLogos_2026-02" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e7305aa3af03d8dc7.png" alt="KB_WebsiteLogos_2026-03" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e017707dd408ed03c.png" alt="KB_WebsiteLogos_2026-04" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660eca717c1962bc0b0f.png" alt="KB_WebsiteLogos_2026-05" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e017707ddc68ed027.png" alt="KB_WebsiteLogos_2026-06" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749a0a65a4611.png" alt="KB_WebsiteLogos_2026-07" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e8682158d375fa5f4.png" alt="KB_WebsiteLogos_2026-08" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749a22b5a45fd.png" alt="KB_WebsiteLogos_2026-09" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0708e45f5503fc36.png" alt="KB_WebsiteLogos_2026-10" loading="lazy">
-                </div>
-                
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e7f6dcf5b29cd28c3.png" alt="KB_WebsiteLogos_2026-12" loading="lazy">
-                </div>
-               
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e868215c9435fa5e0.png" alt="KB_WebsiteLogos_2026-13" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660ea41b878a9858a9bf.png" alt="KB_WebsiteLogos_2026-14" loading="lazy">
-                </div>
-                
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0177076a7b8ed028.png" alt="KB_WebsiteLogos_2026-15" loading="lazy">
-                </div>
-                 <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749c62b5a45fe.png" alt="KB_WebsiteLogos_2026-11" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e01770759598ed021.png" alt="KB_WebsiteLogos_2026-16" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749868d5a45f6.png" alt="KB_WebsiteLogos_2026-17" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0177074e228ed022.png" alt="KB_WebsiteLogos_2026-18" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e52c9527954bbd222.png" alt="KB_WebsiteLogos_2026-19" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d74977775a45fc.png" alt="KB_WebsiteLogos_2026-20" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe16693d85b63e6.png" alt="KB_WebsiteLogos_2026-21" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe1667d5d5b63f2.png" alt="KB_WebsiteLogos_2026-22" loading="lazy">
-                </div>
-              
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe166b0e15b63ee.png" alt="KB_WebsiteLogos_2026-24" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0708e4247903fc32.png" alt="KB_WebsiteLogos_2026-25" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e868215456e5fa5e1.png" alt="KB_WebsiteLogos_2026-26" loading="lazy">
-                </div>
-
-                <!-- Duplicate set for seamless infinite scroll -->
-               <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/6991aa0e899b88e2a3c0c25d.png" alt="KB_WebsiteLogos_2026-01" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d7496fb35a45fb.png" alt="KB_WebsiteLogos_2026-02" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e7305aa3af03d8dc7.png" alt="KB_WebsiteLogos_2026-03" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e017707dd408ed03c.png" alt="KB_WebsiteLogos_2026-04" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660eca717c1962bc0b0f.png" alt="KB_WebsiteLogos_2026-05" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e017707ddc68ed027.png" alt="KB_WebsiteLogos_2026-06" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749a0a65a4611.png" alt="KB_WebsiteLogos_2026-07" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e8682158d375fa5f4.png" alt="KB_WebsiteLogos_2026-08" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749a22b5a45fd.png" alt="KB_WebsiteLogos_2026-09" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0708e45f5503fc36.png" alt="KB_WebsiteLogos_2026-10" loading="lazy">
-                </div>
-                 <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e7f6dcf5b29cd28c3.png" alt="KB_WebsiteLogos_2026-12" loading="lazy">
-                </div>
-               
-               
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e868215c9435fa5e0.png" alt="KB_WebsiteLogos_2026-13" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660ea41b878a9858a9bf.png" alt="KB_WebsiteLogos_2026-14" loading="lazy">
-                </div>
-                
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0177076a7b8ed028.png" alt="KB_WebsiteLogos_2026-15" loading="lazy">
-                </div>
-                 <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749c62b5a45fe.png" alt="KB_WebsiteLogos_2026-11" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e01770759598ed021.png" alt="KB_WebsiteLogos_2026-16" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d749868d5a45f6.png" alt="KB_WebsiteLogos_2026-17" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0177074e228ed022.png" alt="KB_WebsiteLogos_2026-18" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e52c9527954bbd222.png" alt="KB_WebsiteLogos_2026-19" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e67d74977775a45fc.png" alt="KB_WebsiteLogos_2026-20" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe16693d85b63e6.png" alt="KB_WebsiteLogos_2026-21" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe1667d5d5b63f2.png" alt="KB_WebsiteLogos_2026-22" loading="lazy">
-                </div>
-                
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e1fe166b0e15b63ee.png" alt="KB_WebsiteLogos_2026-24" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e0708e4247903fc32.png" alt="KB_WebsiteLogos_2026-25" loading="lazy">
-                </div>
-                <div class="logo-item">
-                    <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698b660e868215456e5fa5e1.png" alt="KB_WebsiteLogos_2026-26" loading="lazy">
-                </div>
-            </div>
-        </div>
-        </div>
-              
-       <!-- Rolling Cards Module Start -->
-    <div class="rolling-cards-module rcm-theme-green" id="rollingCardsModule">
-        <div class="rolling-cards-module__container">
-            <div class="rolling-cards-module__grid">
-                <div class="rolling-cards-module__card rolling-cards-module__card--1" data-rcm-theme="green">
-                    <h2 class="rolling-cards-module__card-title">We love pitching <span class="rolling-cards-module__highlight">big ideas</span>, and our pitch decks sell.</h2>
-                    <ul class="rolling-cards-module__card-list">
-                        <li class="rolling-cards-module__card-list-item">Pitch Decks</li>
-                        <li class="rolling-cards-module__card-list-item">Project Proposals</li>
-                        <li class="rolling-cards-module__card-list-item">Pre-Visualization</li>
-                    </ul>
-                    <!-- Mobile Image (shown only on mobile) -->
-                    <div class="rolling-cards-module__card-image">
-                        <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698ab26ba41b87b028332acc.png" alt="Pitch Decks showcase">
-                        <div class="shadow"></div>
-                    </div>
-                </div>
-
-                <div class="rolling-cards-module__card rolling-cards-module__card--2" data-rcm-theme="purple">
-                    <h2 class="rolling-cards-module__card-title">Let's localize your fan base on a website <span class="rolling-cards-module__highlight">you own</span>.</h2>
-                    <ul class="rolling-cards-module__card-list">
-                        <li class="rolling-cards-module__card-list-item">100% Custom Website</li>
-                        <li class="rolling-cards-module__card-list-item">Integrated Ecommerce</li>
-                        <li class="rolling-cards-module__card-list-item">Influencer Hub</li>
-                    </ul>
-                    <!-- Mobile Image (shown only on mobile) -->
-                    <div class="rolling-cards-module__card-image">
-                        <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/699195b036a3927681678bf0.png" alt="Website showcase">
-                        <div class="shadow"></div>
-                    </div>
-                </div>
-
-                <div class="rolling-cards-module__card rolling-cards-module__card--3" data-rcm-theme="red">
-                    <h2 class="rolling-cards-module__card-title">Representing your brands image <span class="rolling-cards-module__highlight">the way it should be</span>.</h2>
-                    <ul class="rolling-cards-module__card-list">
-                        <li class="rolling-cards-module__card-list-item">Brand Refresh</li>
-                        <li class="rolling-cards-module__card-list-item">Brand Development</li>
-                        <li class="rolling-cards-module__card-list-item">IP Branding</li>
-                    </ul>
-                    <!-- Mobile Image (shown only on mobile) -->
-                    <div class="rolling-cards-module__card-image">
-                        <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/699195b0899b8885b6bf6659.png" alt="Branding showcase">
-                        <div class="shadow"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rolling-cards-module__bottom-section">
-                <h3 class="rolling-cards-module__bottom-title">We want to turn your thoughts and passions into a cohesive and compelling product with inherent value that sells.</h3>
-                <button class="rolling-cards-module__cta-button" onclick="window.location.href='https://tally.so/r/2ENkdb';">Let's Talk.</button>
-                <p class="rolling-cards-module__download-text">Download price sheet <a href="#"><span class="rolling-cards-module__highlight">here</span></a>.</p>
-
-                <div class="rolling-cards-module__image-showcase">
-                    <div class="rolling-cards-module__showcase-item rolling-cards-module__showcase-item--active" id="rcmShowcaseGreen">
-                        <img class="img-float" src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/698ab26ba41b87b028332acc.png" alt="Green showcase" style="width: 100%; border-radius: 5px;">
-                        <div class="shadow"></div>
-                    </div>
-                    <div class="rolling-cards-module__showcase-item" id="rcmShowcasePurple">
-                        <img class="img-float" src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/699195b036a3927681678bf0.png" alt="Purple showcase" style="width: 100%; border-radius: 5px;">
-                        <div class="shadow"></div>
-                    </div>
-                    <div class="rolling-cards-module__showcase-item" id="rcmShowcaseRed">
-                        <img class="img-float" src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/699195b0899b8885b6bf6659.png" alt="Red showcase" style="width: 100%; border-radius: 5px;">
-                        <div class="shadow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Rolling Cards Module End -->
-
-    <script>
-        const cards = document.querySelectorAll('.rolling-cards-module__card');
-        const module = document.getElementById('rollingCardsModule');
-        const showcaseItems = {
-            green: document.getElementById('rcmShowcaseGreen'),
-            purple: document.getElementById('rcmShowcasePurple'),
-            red: document.getElementById('rcmShowcaseRed')
-        };
-
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                const theme = this.getAttribute('data-rcm-theme');
-                
-                // Update module theme
-                module.className = 'rolling-cards-module rcm-theme-' + theme + ' rcm-hover-' + theme;
-                
-                // Update showcase images
-                Object.keys(showcaseItems).forEach(key => {
-                    showcaseItems[key].classList.remove('rolling-cards-module__showcase-item--active');
-                });
-                
-                if (showcaseItems[theme]) {
-                    showcaseItems[theme].classList.add('rolling-cards-module__showcase-item--active');
-                }
-            });
-        });
-
-        // Reset to default (green) when mouse leaves all cards
-        const grid = document.querySelector('.rolling-cards-module__grid');
-        grid.addEventListener('mouseleave', function() {
-            module.className = 'rolling-cards-module rcm-theme-green';
-            Object.keys(showcaseItems).forEach(key => {
-                showcaseItems[key].classList.remove('rolling-cards-module__showcase-item--active');
-            });
-            showcaseItems.green.classList.add('rolling-cards-module__showcase-item--active');
-        });
-    </script>
-              
-              
-              
-              
-              
-              
-       
-
-              
-              
-              
-              
-              
-              
-              
-              
-              
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-              <footer class="site-footer" data-hover-hint="footer">
-                   <div class="footer-info">
-  <div class="social pf-footer-social" data-context="theme.footer" data-hover-hint="footerSocialIcons">
-<div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
-          <div class="logo e2e-site-logo-text logo-image  ">
-    <a href="/" class="image-normal image-link">
-      <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/697fcca366e7ca4428b15ff7.gif" alt="Kitbashed Creative">
-    </a>
-          </div>
-        </div>
-              <ul>
-                <li>
-                  <a href="mailto:kenny@kitbashedcreative.com">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 30 24"
-                      style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
-                      <g>
-                        <path
-                          d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z">
-                        </path>
-                      </g>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://wa.me/18182125867" target="_blank">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 30 24"
-                      style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M21.0232 5.97047C19.4251 4.37822 17.2998 3.50089 15.0355 3.5C10.37 3.5 6.57284 7.27871 6.57097 11.9234C6.57035 13.408 6.96014 14.8573 7.70082 16.1347L6.5 20.5L10.9872 19.3286C12.2235 19.9997 13.6154 20.3533 15.0321 20.3539H15.0356C19.7006 20.3539 23.4981 16.5748 23.5 11.9301C23.5009 9.67921 22.6213 7.56273 21.0232 5.97047ZM15.0356 18.9312H15.0327C13.7703 18.9307 12.5321 18.5932 11.452 17.9552L11.195 17.8035L8.53233 18.4986L9.24307 15.9149L9.07577 15.6501C8.37152 14.5353 7.99956 13.2468 8.00011 11.9239C8.00165 8.06344 11.1577 4.92274 15.0384 4.92274C16.9175 4.92345 18.6839 5.6527 20.0122 6.97612C21.3405 8.29954 22.0716 10.0587 22.0709 11.9295C22.0693 15.7902 18.9133 18.9312 15.0356 18.9312ZM18.8946 13.6874C18.6831 13.582 17.6433 13.0728 17.4494 13.0026C17.2555 12.9323 17.1146 12.8972 16.9735 13.1079C16.8326 13.3186 16.4272 13.7927 16.3038 13.9332C16.1805 14.0737 16.0571 14.0913 15.8456 13.9859C15.6341 13.8805 14.9527 13.6583 14.1448 12.9412C13.5161 12.3831 13.0916 11.6938 12.9682 11.4831C12.8449 11.2723 12.9551 11.1584 13.061 11.0535C13.1561 10.9592 13.2725 10.8077 13.3782 10.6847C13.484 10.5618 13.5192 10.474 13.5897 10.3336C13.6602 10.1931 13.625 10.0701 13.5721 9.96479C13.5192 9.85944 13.0963 8.82341 12.92 8.40198C12.7483 7.99154 12.5739 8.04708 12.4441 8.04065C12.3209 8.03455 12.1798 8.03324 12.0388 8.03324C11.8978 8.03324 11.6687 8.08593 11.4748 8.29663C11.2809 8.50736 10.7346 9.01658 10.7346 10.0526C10.7346 11.0886 11.4924 12.0895 11.5982 12.23C11.7039 12.3704 13.0895 14.4965 15.2111 15.4082C15.7157 15.6251 16.1097 15.7546 16.4169 15.8516C16.9235 16.0118 17.3846 15.9892 17.749 15.935C18.1554 15.8746 19.0003 15.4258 19.1766 14.9341C19.3528 14.4425 19.3528 14.021 19.2999 13.9332C19.2471 13.8454 19.1061 13.7927 18.8946 13.6874Z">
-                      </path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-text">
-              <b> SOCIAL MEDIA IS DYING. </b> <br>Let's build a real community together.<br><br>
-            </div>
-</div>
-              </footer>
-        </main>
-      </div>
-    </div>
-  </div>
-  </body>
-  <script type="text/javascript">
-  // fix for Safari's back/forward cache
-  window.onpageshow = function(e) {
-    if (e.persisted) { window.location.reload(); }
-  };
-</script>
-<!-- Script -->
- <script>
-        // Rolling Cards Module - Scoped JavaScript
-        (function() {
-            const moduleElement = document.getElementById('rollingCardsModule');
-            if (!moduleElement) return;
-
-            const cards = moduleElement.querySelectorAll('.rolling-cards-module__card');
-            const showcaseItems = moduleElement.querySelectorAll('.rolling-cards-module__showcase-item');
-
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    const theme = this.getAttribute('data-rcm-theme');
-                    
-                    // Update module theme for button color
-                    moduleElement.className = 'rolling-cards-module rcm-theme-' + theme;
-                    
-                    // Add hover class for highlight colors
-                    if (theme === 'green') {
-                        moduleElement.classList.add('rcm-hover-green');
-                    } else if (theme === 'purple') {
-                        moduleElement.classList.add('rcm-hover-purple');
-                    } else if (theme === 'red') {
-                        moduleElement.classList.add('rcm-hover-red');
-                    }
-                    
-                    // Update showcase
-                    showcaseItems.forEach(item => item.classList.remove('rolling-cards-module__showcase-item--active'));
-                    const showcaseId = 'rcmShowcase' + theme.charAt(0).toUpperCase() + theme.slice(1);
-                    const showcaseElement = document.getElementById(showcaseId);
-                    if (showcaseElement) {
-                        showcaseElement.classList.add('rolling-cards-module__showcase-item--active');
-                    }
-                });
-
-                card.addEventListener('mouseleave', function() {
-                    // Remove all hover classes
-                    moduleElement.classList.remove('rcm-hover-green', 'rcm-hover-purple', 'rcm-hover-red');
-                });
-            });
-
-            // Set default theme
-            moduleElement.className = 'rolling-cards-module rcm-theme-green';
-        })();
-    </script>
  
-<script>
-        const track = document.getElementById('carouselTrack');
-        
-        track.addEventListener('animationiteration', function() {
-            console.log('Animation loop completed');
-        });
-    </script>
-  <script type="text/javascript">var __config__ = {"page_id":"p696ab75a0de2fed0e21055d65b40c5f8bd16284e3f12fb201e294","theme":{"name":"marta\/ludwig"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":false},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"G-NZ2TE2K5LR","anonymization":false}};</script>
-  <script type="text/javascript" src="site/translations?cb=8dae7d4d979f383d5ca1dd118e49b6878a07c580"></script>
-   <script type="text/javascript" src="https://dirqenstudio23.github.io/kitbashed/js/main.js"></script>
-</html>
+.nav-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-text ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* SVG Icon */
+.nav-text .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/* Bold headline */
+.nav-text b {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+
