@@ -1,4 +1,4 @@
-<script>
+
 (function() {
   'use strict';
 
@@ -339,5 +339,4 @@
     initAll();
   }
 
-})();
-</script>
+})(); 
