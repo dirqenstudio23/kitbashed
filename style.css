@@ -2162,7 +2162,16 @@
   .dyn-dot { width: 8px; height: 8px; }
 }
 
-.sub-title span {
+.standard-modules .rich-text .caption
+ {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 48px !important;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    text-transform: none;
+}
+ .sub-title span {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 38px !important;
     font-style: normal;
@@ -2170,10 +2179,11 @@
     text-align: left;
     text-transform: none;
 }
-.standard-modules .rich-text .main-text, .standard-modules .rich-text div, .standard-modules .rich-text p {
+.standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 28px !important;
     font-style: normal;
+        line-height: 40px;
     font-weight: 400;
     text-align: left;
     text-transform: none;
