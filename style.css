@@ -1517,3 +1517,9 @@
         .site-header {
         max-width: 100% !important;
         }
+
+@media (max-width: 932px) {
+    .site-header {
+        margin-top: -18px !important;
+    }
+}
