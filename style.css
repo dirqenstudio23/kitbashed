@@ -1592,7 +1592,7 @@
 
 /* Arrow Kiri — gambar diputar 180 derajat */
 .custom-slider-v3-arrow-prev {
-  left: 16px;
+  left: 0;
 }
 
 .custom-slider-v3-arrow-prev img {
@@ -1601,7 +1601,7 @@
 
 /* Arrow Kanan */
 .custom-slider-v3-arrow-next {
-  right: 16px;
+  right: 0;
 }
 
 /* Hover effect */
@@ -1619,7 +1619,7 @@
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 30px 80px;
+  padding: 30px 70px;
   aspect-ratio: 16 / 6; 
 }
 
@@ -1910,7 +1910,6 @@
   }
 }
 /* slider cloak 3 */  
-
 .custom-slider-v2-wrapper {
   position: relative;
   width: 100%;
@@ -1920,6 +1919,7 @@
 .custom-slider-v2-container {
   position: relative;
   width: 100%;
+  height: 489px;
   cursor: pointer;
   user-select: none;
 }
@@ -1929,30 +1929,34 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
   pointer-events: none;
+  padding: 50px;
 }
 
 .custom-slider-v2-slide.custom-slider-v2-active {
-  position: relative;
+  position: absolute;
   opacity: 1;
   pointer-events: auto;
 }
 
-.custom-slider-v2-slide img {
-  width: 80%;
-  height: auto;
+.custom-slider-v2-slide .js-lightbox {
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
+.custom-slider-v2-slide img,
 .custom-slider-v2-img {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* ====== ARROW STYLES ====== */
 .custom-slider-v2-arrow {
   position: absolute;
   top: 50%;
@@ -1980,7 +1984,6 @@
   pointer-events: none;
 }
 
-/* Arrow Kiri — gambar diputar 180 derajat */
 .custom-slider-v2-arrow-prev {
   left: 0;
 }
@@ -1989,20 +1992,17 @@
   transform: rotate(180deg);
 }
 
-/* Arrow Kanan */
 .custom-slider-v2-arrow-next {
   right: 0;
 }
 
-/* Hover effect */
 .custom-slider-v2-arrow-prev:hover {
-  transform: translateY(-50%) translateX(-3px);
+  transform: translateY(-50%) translateX(0);
 }
 
 .custom-slider-v2-arrow-next:hover {
-  transform: translateY(-50%) translateX(3px);
+  transform: translateY(-50%) translateX(0);
 }
-/* ====== END ARROW STYLES ====== */
 
 .custom-slider-v2-dots {
   position: absolute;
@@ -2077,7 +2077,7 @@
     width: 8px;
     height: 8px;
   }
-}  
+}
 
 
 
@@ -2252,4 +2252,9 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
+}
+
+.site-header {
+        padding-left: 0!important;
+    padding-right: 0!important;
 }
