@@ -2407,4 +2407,14 @@
 .pt-50 {
     padding-top: 0;
 }
+
+.site-footer .rich-text div {
+   line-height: 25px;
+}
+
+.site-footer, .site-footer a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
     }
