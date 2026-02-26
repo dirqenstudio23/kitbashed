@@ -560,7 +560,7 @@
     margin-top: 8px;         
     width: 20px;
     height: 20px;
-    background-image: url('https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/6991578ec086651d4b04621c.png');
+    background-image: url('https://dirqenstudio23.github.io/kitbashed/images/cloak/KitbashedCreative-Cloak-arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1913,7 +1913,7 @@
     .custom-slider-v2-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 12 / 12;
+    aspect-ratio: 9.8 / 12;
     cursor: pointer;
     user-select: none;
     }
@@ -2267,8 +2267,12 @@
     .pt-40 {
     padding-top: 40px !important;
     }
+    
     .pt-50 {
     padding-top: 40px !important;
+    }
+    .pt-80 {
+    padding-top: 80px !important;
     }
     .flx-40 {
     flex: 40;
@@ -2281,7 +2285,10 @@
         height: 355px !important
         }
         
-
+.standard-modules .tree .tree-wrapper {
+    display: flex;
+    align-items: center;
+}
 
     @media (max-width: 1024px) {
     nav {
