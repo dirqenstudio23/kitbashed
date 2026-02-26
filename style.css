@@ -1913,7 +1913,7 @@
     .custom-slider-v2-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 9.8 / 12;
+    aspect-ratio: 12.1 / 12;
     cursor: pointer;
     user-select: none;
     }
@@ -1927,7 +1927,7 @@
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
     pointer-events: none;
-    padding: 50px;
+    padding: 0 50px;
     }
 
     .custom-slider-v2-slide.custom-slider-v2-active {
@@ -2269,7 +2269,7 @@
     }
     
     .pt-50 {
-    padding-top: 40px !important;
+    padding-top: 50px !important;
     }
     .pt-80 {
     padding-top: 80px !important;
@@ -2290,7 +2290,10 @@
     align-items: center;
 }
 
-    @media (max-width: 1024px) {
+    @media  (min-width: 769px) and (max-width: 1024px)   {
+        .custom-slider-v2-container {
+    aspect-ratio: 12.9 / 12; 
+}
     nav {
     width: 76%;
     }
@@ -2337,6 +2340,9 @@
     }
 
     @media  (max-width: 768px)  {
+        .pt-m-50 {
+        padding-top: 50px !important;
+        }
         .p-4 {
     margin-left: 5% !important;
     margin-right: 5% !important;
@@ -2373,10 +2379,10 @@
 .custom-slider-v2-slide {
     padding: 30px;
 }
-.pt-50 {
-    padding-top: 10px !important;
+.custom-slider-v2-container {
+    aspect-ratio: 9.8 / 12; 
 }
-    
+ 
 }
  @media  (max-width: 425px)  {
        .standard-modules .rich-text .caption {
@@ -2424,3 +2430,9 @@
     }
 
     }
+
+    @media  (min-width: 1441px) {
+        .custom-slider-v2-container {   
+        aspect-ratio: 11.3 / 12;
+    }
+}
