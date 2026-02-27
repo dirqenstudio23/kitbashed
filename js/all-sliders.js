@@ -1,4 +1,3 @@
-
 (function() {
   'use strict';
 
@@ -6,7 +5,6 @@
   const CustomSliderV3 = {
     container: null,
     slides: [],
-    dots: [],
     progressBar: null,
     currentIndex: 0,
     autoPlayInterval: null,
@@ -18,7 +16,6 @@
       this.container = document.getElementById('customSliderV3Main');
       if (!this.container) return;
       this.slides = this.container.querySelectorAll('.custom-slider-v3-slide');
-      this.dots = this.container.querySelectorAll('.custom-slider-v3-dot');
       this.progressBar = this.container.querySelector('.custom-slider-v3-progress-bar');
       if (this.slides.length === 0) return;
       this.setupEventListeners();
@@ -28,16 +25,9 @@
     setupEventListeners: function() {
       const self = this;
       this.container.addEventListener('click', function(e) {
-        if (e.target.classList.contains('custom-slider-v3-dot') || e.target.closest('.custom-slider-v3-arrow')) return;
+        if (e.target.closest('.custom-slider-v3-arrow')) return;
         self.nextSlide();
         self.resetAutoPlay();
-      });
-      this.dots.forEach(function(dot, index) {
-        dot.addEventListener('click', function(e) {
-          e.stopPropagation();
-          self.goToSlide(index);
-          self.resetAutoPlay();
-        });
       });
       const arrowPrev = document.getElementById('sliderArrowPrev');
       if (arrowPrev) {
@@ -79,10 +69,8 @@
 
     goToSlide: function(index) {
       this.slides[this.currentIndex].classList.remove('custom-slider-v3-active');
-      this.dots[this.currentIndex].classList.remove('custom-slider-v3-dot-active');
       this.currentIndex = index;
       this.slides[this.currentIndex].classList.add('custom-slider-v3-active');
-      this.dots[this.currentIndex].classList.add('custom-slider-v3-dot-active');
       this.progressWidth = 0;
       this.updateProgress();
     },
@@ -114,7 +102,6 @@
   const CustomAutoSlider = {
     container: null,
     slides: [],
-    dots: [],
     progressBar: null,
     currentIndex: 0,
     autoPlayInterval: null,
@@ -126,7 +113,6 @@
       this.container = document.getElementById('customAutoSliderMain');
       if (!this.container) return;
       this.slides = this.container.querySelectorAll('.custom-auto-slider-slide');
-      this.dots = this.container.querySelectorAll('.custom-auto-slider-dot');
       this.progressBar = this.container.querySelector('.custom-auto-slider-progress-bar');
       if (this.slides.length === 0) return;
       this.setupEventListeners();
@@ -136,16 +122,9 @@
     setupEventListeners: function() {
       const self = this;
       this.container.addEventListener('click', function(e) {
-        if (e.target.classList.contains('custom-auto-slider-dot') || e.target.closest('.custom-auto-slider-arrow')) return;
+        if (e.target.closest('.custom-auto-slider-arrow')) return;
         self.nextSlide();
         self.resetAutoPlay();
-      });
-      this.dots.forEach(function(dot, index) {
-        dot.addEventListener('click', function(e) {
-          e.stopPropagation();
-          self.goToSlide(index);
-          self.resetAutoPlay();
-        });
       });
       const arrowPrev = document.getElementById('autoSliderArrowPrev');
       if (arrowPrev) {
@@ -187,10 +166,8 @@
 
     goToSlide: function(index) {
       this.slides[this.currentIndex].classList.remove('custom-auto-slider-active');
-      this.dots[this.currentIndex].classList.remove('custom-auto-slider-dot-active');
       this.currentIndex = index;
       this.slides[this.currentIndex].classList.add('custom-auto-slider-active');
-      this.dots[this.currentIndex].classList.add('custom-auto-slider-dot-active');
       this.progressWidth = 0;
       this.updateProgress();
     },
@@ -222,7 +199,6 @@
   const CustomSliderV2 = {
     container: null,
     slides: [],
-    dots: [],
     progressBar: null,
     currentIndex: 0,
     autoPlayInterval: null,
@@ -234,7 +210,6 @@
       this.container = document.getElementById('customSliderV2Main');
       if (!this.container) return;
       this.slides = this.container.querySelectorAll('.custom-slider-v2-slide');
-      this.dots = this.container.querySelectorAll('.custom-slider-v2-dot');
       this.progressBar = this.container.querySelector('.custom-slider-v2-progress-bar');
       if (this.slides.length === 0) return;
       this.setupEventListeners();
@@ -244,16 +219,9 @@
     setupEventListeners: function() {
       const self = this;
       this.container.addEventListener('click', function(e) {
-        if (e.target.classList.contains('custom-slider-v2-dot') || e.target.closest('.custom-slider-v2-arrow')) return;
+        if (e.target.closest('.custom-slider-v2-arrow')) return;
         self.nextSlide();
         self.resetAutoPlay();
-      });
-      this.dots.forEach(function(dot, index) {
-        dot.addEventListener('click', function(e) {
-          e.stopPropagation();
-          self.goToSlide(index);
-          self.resetAutoPlay();
-        });
       });
       const arrowPrev = document.getElementById('sliderV2ArrowPrev');
       if (arrowPrev) {
@@ -295,10 +263,8 @@
 
     goToSlide: function(index) {
       this.slides[this.currentIndex].classList.remove('custom-slider-v2-active');
-      this.dots[this.currentIndex].classList.remove('custom-slider-v2-dot-active');
       this.currentIndex = index;
       this.slides[this.currentIndex].classList.add('custom-slider-v2-active');
-      this.dots[this.currentIndex].classList.add('custom-slider-v2-dot-active');
       this.progressWidth = 0;
       this.updateProgress();
     },
@@ -339,4 +305,4 @@
     initAll();
   }
 
-})(); 
+})();
