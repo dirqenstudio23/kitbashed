@@ -2290,7 +2290,12 @@
     padding-right: 0!important;
     }
 
-
+.site-content 
+ {
+        margin-left: 0 !important;
+    margin-right: 0 !important;
+        width: 100% !important;
+}
     .pt-40 {
     padding-top: 40px !important;
     }
