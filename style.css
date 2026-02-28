@@ -1830,7 +1830,7 @@
     .dyn-arrow-prev { left: 0; }
     .dyn-arrow-next { right: 0; }
     .dyn-arrow-prev img { transform: rotate(180deg); }
-    .dyn-arrow-prev:hover { transform: translateY(-50%) translateX(-3px); }
+    .dyn-arrow-prev:hover { transform: translateY(-50%) translateX(0); }
     .dyn-arrow-next:hover { transform: translateY(-50%) translateX(0); }
     .dyn-dots {
     position: absolute;
