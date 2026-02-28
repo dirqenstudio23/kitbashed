@@ -3107,7 +3107,7 @@ max-width: 100% !important;
 
 
  .height-ratio-1 {
-      aspect-ratio: 10.9 / 6;
+      aspect-ratio: 6 / 8.6 !important;
     }
     .img-slider-ratio {
       width: 100%;
@@ -3125,3 +3125,10 @@ max-width: 100% !important;
       object-fit: cover;
       object-position: center;
     }
+
+
+    @media (min-width: 1441px) {
+    .custom-slider-v2-container {
+        aspect-ratio: 12 / 10 !important;
+    }
+}
