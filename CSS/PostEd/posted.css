@@ -2820,7 +2820,7 @@ nav {
 .other-projects .project-cover .details {
   align-items: center; }
  .height-ratio-1 {
-      aspect-ratio: 10.9 / 6;
+      aspect-ratio: 10.9 / 6 !important;
     }
     .img-slider-ratio {
       width: 100%;
