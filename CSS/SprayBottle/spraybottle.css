@@ -3121,9 +3121,9 @@ nav {
 }
 
 @media (min-width: 1441px) {
-  .height-ratio-1 { height: clamp(755px, 52vw, 827px) !important }
+  .height-ratio-1 { height: clamp(614px, 52vw, 614px) !important; }
   .height-ratio-2 { height: clamp(1000px, 75vw, 1215px) !important; }
-  .flx-slider-1 { flex: 3.5 !important; }
+  .flx-slider-1 { flex: 3.692 !important; }
 }
 
 @media (max-width: 1440px) {
