@@ -2075,14 +2075,7 @@
         font-size: 25px !important;
         line-height: 42px;
     }
-        .standard-modules .rich-text .main-text, .standard-modules .rich-text .main-text span, .standard-modules .rich-text div, .standard-modules .rich-text div span, .standard-modules .rich-text p, .standard-modules .rich-text p span {
-        font-size: 16px !important;
-        line-height: 22px !important;
-    }
-        .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
-        font-size: 16px !important;
-        line-height: 22px;
-    }
+
      .site-footer {
             padding-top: 50px;
         }
@@ -2116,4 +2109,126 @@
         .custom-slider-v2-container {
         aspect-ratio: 10.9 / 12;
     }
+}
+
+
+
+/* FONT Size */
+@media (min-width: 1898px) {
+  .standard-modules .rich-text .caption {
+    font-size: 72px !important;
+  }
+  .sub-title span {
+    font-size: 54px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 32px !important;
+    line-height: 46px !important;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1897px) {
+  .standard-modules .rich-text .caption {
+    font-size: 64px !important;
+  }
+  .sub-title span {
+    font-size: 48px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 36px !important;
+    line-height: 46px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .standard-modules .rich-text .caption {
+    font-size: 56px !important;
+  }
+  .sub-title span {
+    font-size: 42px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .standard-modules .rich-text .caption {
+    font-size: 48px !important;
+  }
+  .sub-title span {
+    font-size: 36px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 22px !important;
+     line-height: 34px !important;
+  }
+}
+
+@media (max-width: 768px) {
+ .standard-modules .rich-text .caption {
+    font-size: 40px !important;
+  }
+  .sub-title span {
+    font-size: 30px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 20px !important;
+     line-height: 32px !important;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .standard-modules .rich-text .caption {
+    font-size: 32px !important;
+  }
+  .sub-title span {
+    font-size: 24px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 18px !important;
+     line-height: 30px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .standard-modules .rich-text .caption {
+    font-size: 28px !important;
+  }
+  .sub-title span {
+    font-size: 22px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
 }
