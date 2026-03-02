@@ -2762,10 +2762,7 @@ nav {
   .standard-modules .rich-text .sub-title {
     padding-bottom: 0px;
     padding-top: 0px; }
-    .standard-modules .rich-text .sub-title,
-    .standard-modules .rich-text .sub-title span {
-      font-size: 19px !important;
-      line-height: 24px !important; }
+
   .standard-modules .rich-text .main-text,
   .standard-modules .rich-text div,
   .standard-modules .rich-text p {
