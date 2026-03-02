@@ -3132,3 +3132,67 @@ max-width: 100% !important;
         aspect-ratio: 12 / 10 !important;
     }
 }
+
+  .height-ratio-1 {
+  height: clamp(350px, 55vw, 735px) !important;
+  aspect-ratio: unset !important;
+}
+    .height-ratio-1 .img-slider-ratio-slide img,
+.height-ratio-1 .custom-slider-v2-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.height-ratio-2 {
+  height: clamp(350px, 55vw, 735px) !important;
+  aspect-ratio: unset !important;
+}
+
+.height-ratio-2 .img-slider-ratio-slide img,
+.height-ratio-2 .custom-slider-v2-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+@media (min-width: 1441px) {
+  .height-ratio-1 { height: clamp(614px, 52vw, 614px) !important; }
+  .height-ratio-2 { height: clamp(1000px, 75vw, 1215px) !important; }
+  .flx-slider-1 { flex: 3.692 !important; }
+}
+
+@media (max-width: 1440px) {
+  .height-ratio-1 { height: clamp(350px, 55vw, 462px) !important; }
+  .height-ratio-2 { height: clamp(450px, 75vw, 600px) !important; }
+   .height-ratio-1 .img-slider-ratio-slide { padding: 0 26px !important;}
+   .flx-slider-1 { flex: 3.5 !important; }
+}
+
+@media (max-width: 1024px) {
+  .height-ratio-1 { height: clamp(250px, 72vw, 327px) !important; }
+  .height-ratio-2 { height: clamp(250px, 75vw, 400px) !important; }
+  .flx-slider-1 { flex: 3.58 !important; }
+}
+
+@media (max-width: 768px) {
+  .height-ratio-1 { height: clamp(180px, 72vw, 270px) !important; }
+  .height-ratio-2 { height: clamp(200px, 75vw, 325px) !important; }
+  .height-ratio-1 .img-slider-ratio-slide, .height-ratio-2 .img-slider-ratio-slide { padding: 0 33px !important;}
+  .gap-70 {
+    gap: 10px !important;
+}
+.flx-slider-1 { flex: 4 !important; }
+}
+
+@media (max-width: 425px) {
+  .height-ratio-1 { height: clamp(476px, 100vw, 524px) !important }
+  .height-ratio-2 { height: clamp(200px, 90vw, 375px) !important; }
+}
+
+@media (max-width: 375px) {
+  .height-ratio-1 { height: clamp(150px, 100vw, 489px) !important; }
+  .height-ratio-2 { height: clamp(200px, 90vw, 320px) !important; }
+}
