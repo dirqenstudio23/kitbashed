@@ -1431,10 +1431,10 @@ nav {
     /* stylelint-enable length-zero-no-unit */
     padding-top: 24px; } }
 
-.other-projects:after, .other-projects .title-wrapper:after, .page-content:after, .project-module:after, .other-projects .project-cover .details-inner:after {
+/* .other-projects:after, .other-projects .title-wrapper:after, .page-content:after, .project-module:after, .other-projects .project-cover .details-inner:after {
   clear: both;
   content: '';
-  display: table; }
+  display: table; } */
 
 .back-to-top .arrow {
   margin-right: 10px; }
