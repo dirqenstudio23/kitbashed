@@ -3088,7 +3088,11 @@ nav {
 
 
 
-  /* Slider */
+
+
+    .flx-slider-1 { flex: 5 !important; }
+    .flx-slider-2 { flex: 3.76 !important; }
+    /* Slider */
   .height-ratio-1 {
   height: clamp(350px, 55vw, 735px) !important;
   aspect-ratio: unset !important;
@@ -3101,46 +3105,65 @@ nav {
   object-fit: contain !important;
   object-position: center !important;
 }
-
-.height-ratio-2 {
-  height: clamp(350px, 55vw, 735px) !important;
-  aspect-ratio: unset !important;
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
 }
 
-.height-ratio-2 .img-slider-ratio-slide img,
-.height-ratio-2 .custom-slider-v2-img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  object-position: center !important;
+
+@media (min-width: 1898px) {
+  .height-ratio-1 { height: clamp(600px, 35.6vw, 964px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 1.01% !important;
+}
+.brand-asset-task-item::before {
+    width: 30px;
+    height: 30px;
+
 }
 
-@media (min-width: 1441px) {
-  .height-ratio-1 { height: clamp(600px, 50vw, 900px) !important; }
-  .height-ratio-2 { height: clamp(300px, 50vw, 300px) !important; }
+}
+@media (min-width: 1441px) and (max-width: 1897px) {
+  .height-ratio-1 { height: clamp(600px, 50vw, 679px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 1440px) {
-  .height-ratio-1 { height: clamp(500px, 55vw, 735px) !important; }
-  .height-ratio-2 { height: clamp(300px, 55vw, 300px) !important; }
+  .height-ratio-1 { height: clamp(400px, 50vw, 478px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 1024px) {
-  .height-ratio-1 { height: clamp(400px, 70vw, 650px) !important; }
-  .height-ratio-2 { height: clamp(150px, 70vw, 150px) !important; }
+  .height-ratio-1 { height: clamp(200px, 70vw, 319px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 768px) {
-  .height-ratio-1 { height: clamp(350px, 75vw, 580px) !important; }
-  .height-ratio-2 { height: clamp(100px, 75vw, 100px) !important; }
+  .height-ratio-1 { height: clamp(250px, 75vw, 288px) !important; }
+.brand-asset-task-item::before {
+  margin-top:3.01% !important;
+}
+  .gap-70 {
+    gap: 10px !important;
+}
+.height-ratio-1 .img-slider-ratio-slide, .height-ratio-2 .img-slider-ratio-slide { padding: 0 33px !important;}
 }
 
 @media (max-width: 425px) {
-  .height-ratio-1 { height: clamp(300px, 90vw, 400px) !important; }
-  .height-ratio-2 { height: clamp(100px, 90vw, 100px) !important; }
+  .height-ratio-1 { height: clamp(300px, 79vw, 401px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 375px) {
-  .height-ratio-1 { height: clamp(280px, 95vw, 360px) !important; }
-  .height-ratio-2 { height: clamp(80px, 95vw, 80px) !important; }
+  .height-ratio-1 { height: clamp(280px, 77vw, 360px) !important; }
+.brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
