@@ -2116,11 +2116,11 @@
     font-size: 72px !important;
     line-height: 75px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 54px !important;
             line-height: 63px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span  {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li  {
     font-size: 40px !important;
     line-height: 50px !important;
   }
@@ -2140,11 +2140,11 @@
     font-size: 64px !important;
             line-height: 69px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 48px !important;
             line-height: 54px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 36px !important;
     line-height: 46px !important;
   }
@@ -2165,11 +2165,11 @@
     font-size: 56px !important;
            line-height: 59px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 42px !important;
             line-height: 48px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 32px !important;
     line-height: 42px !important;
   }
@@ -2190,11 +2190,11 @@
     font-size: 48px !important;
             line-height: 56px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 36px !important;
             line-height: 44px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 28px !important;
     line-height: 38px !important;
   }
@@ -2215,11 +2215,11 @@
     font-size: 40px !important;
             line-height: 46px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 30px !important;
             line-height: 40px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 24px !important;
     line-height: 34px !important;
   }
@@ -2241,11 +2241,11 @@
     font-size: 32px !important;
     line-height: 39px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title{
     font-size: 24px !important;
             line-height: 32px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 20px !important;
     line-height: 28px !important;
   }
@@ -2266,11 +2266,11 @@
     font-size: 28px !important;
     line-height: 35px !important;
   }
-  .sub-title span{
+  .sub-title span, .svc-title   {
     font-size: 22px !important;
             line-height: 28px !important;
   }
-  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span {
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
     font-size: 18px !important;
     line-height: 26px !important;
   }
