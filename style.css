@@ -2116,6 +2116,7 @@
 @media (min-width: 1898px) {
   .standard-modules .rich-text .caption {
     font-size: 72px !important;
+    line-height: 75px !important;
   }
   .sub-title span {
     font-size: 54px !important;
@@ -2138,6 +2139,7 @@
 @media (min-width: 1441px) and (max-width: 1897px) {
   .standard-modules .rich-text .caption {
     font-size: 64px !important;
+            line-height: 69px !important;
   }
   .sub-title span {
     font-size: 48px !important;
@@ -2158,6 +2160,7 @@
 @media (max-width: 1440px) {
   .standard-modules .rich-text .caption {
     font-size: 56px !important;
+           line-height: 59px !important;
   }
   .sub-title span {
     font-size: 42px !important;
@@ -2178,6 +2181,7 @@
 @media (max-width: 1024px) {
   .standard-modules .rich-text .caption {
     font-size: 48px !important;
+            line-height: 56px !important;
   }
   .sub-title span {
     font-size: 36px !important;
@@ -2198,6 +2202,7 @@
 @media (max-width: 768px) {
  .standard-modules .rich-text .caption {
     font-size: 40px !important;
+            line-height: 46px !important;
   }
   .sub-title span {
     font-size: 30px !important;
@@ -2219,6 +2224,7 @@
 @media (max-width: 425px) {
   .standard-modules .rich-text .caption {
     font-size: 32px !important;
+    line-height: 39px !important;
   }
   .sub-title span {
     font-size: 24px !important;
@@ -2239,6 +2245,7 @@
 @media (max-width: 375px) {
   .standard-modules .rich-text .caption {
     font-size: 28px !important;
+    line-height: 35px !important;
   }
   .sub-title span {
     font-size: 22px !important;
