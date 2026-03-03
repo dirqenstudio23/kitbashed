@@ -2887,8 +2887,8 @@ nav {
 }
 
 @media (min-width: 1441px) {
-  .height-ratio-1 { height: clamp(600px, 52vw, 723px) !important; }
-  .height-ratio-2 { height: clamp(1000px, 75vw, 1215px) !important; }
+  .height-ratio-1 { height: clamp(500px, 52vw, 581px) !important; }
+  .height-ratio-2 { height: clamp(800px, 75vw, 970px) !important }
 }
 
 @media (max-width: 1440px) {
