@@ -2128,6 +2128,11 @@
     font-size: 32px !important;
     line-height: 46px !important;
   }
+  .brand-asset-task-item::before {
+    width: 30px;
+    height: 30px;
+
+}
 
 }
 @media (min-width: 1441px) and (max-width: 1897px) {
