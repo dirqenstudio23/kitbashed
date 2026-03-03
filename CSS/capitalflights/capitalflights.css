@@ -2898,7 +2898,7 @@ nav {
 @media (min-width: 1898px) {
   .height-ratio-1 { height: clamp(420px, 24vw, 650px) !important; }
   .height-ratio-2 { height: clamp(420px, 38vw, 650px) !important; }
-  .flx-slider-1   { flex: 2.5 !important; }
+  .flx-slider-1   { flex: 3.5 !important; }
 }
 
 @media (min-width: 1441px) and (max-width: 1897px) {
