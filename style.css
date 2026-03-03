@@ -2113,7 +2113,6 @@
 
 
 
-/* FONT Size */
 @media (min-width: 1898px) {
   .standard-modules .rich-text .caption {
     font-size: 72px !important;
@@ -2129,6 +2128,7 @@
     font-size: 32px !important;
     line-height: 46px !important;
   }
+
 }
 @media (min-width: 1441px) and (max-width: 1897px) {
   .standard-modules .rich-text .caption {
@@ -2145,6 +2145,9 @@
     font-size: 28px !important;
     line-height: 40px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 1440px) {
@@ -2162,6 +2165,9 @@
     font-size: 24px !important;
     line-height: 36px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 1024px) {
@@ -2179,6 +2185,9 @@
     font-size: 22px !important;
      line-height: 34px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -2196,6 +2205,9 @@
     font-size: 20px !important;
      line-height: 32px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top:3.01% !important;
+}
 
 }
 
@@ -2214,6 +2226,9 @@
     font-size: 18px !important;
      line-height: 30px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top: 2.01% !important;
+}
 }
 
 @media (max-width: 375px) {
@@ -2231,4 +2246,10 @@
     font-size: 18px !important;
     line-height: 30px !important;
   }
+  .brand-asset-task-item::before {
+  margin-top: 2.01% !important;
 }
+}
+
+
+
