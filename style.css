@@ -2158,6 +2158,9 @@
 }
 
 @media (max-width: 1440px) {
+    .pt-80 {
+    padding-top: 5.556% !important;
+}
   .standard-modules .rich-text .caption {
     font-size: 56px !important;
            line-height: 59px !important;
@@ -2179,6 +2182,9 @@
 }
 
 @media (max-width: 1024px) {
+    .pt-80   {
+    padding-top: 7.814% !important;
+}
   .standard-modules .rich-text .caption {
     font-size: 48px !important;
             line-height: 56px !important;
@@ -2200,6 +2206,9 @@
 }
 
 @media (max-width: 768px) {
+    .pt-80 {
+    padding-top: 10.42% !important;
+}
  .standard-modules .rich-text .caption {
     font-size: 40px !important;
             line-height: 46px !important;
@@ -2222,6 +2231,9 @@
 }
 
 @media (max-width: 425px) {
+    .pt-80 {
+    padding-top: 18.83% !important;
+}
   .standard-modules .rich-text .caption {
     font-size: 32px !important;
     line-height: 39px !important;
@@ -2243,6 +2255,9 @@
 }
 
 @media (max-width: 375px) {
+    .pt-80 {
+    padding-top: 21.34% !important;
+}
   .standard-modules .rich-text .caption {
     font-size: 28px !important;
     line-height: 35px !important;
