@@ -2817,6 +2817,8 @@ nav {
 }
 
 
+
+
 .height-ratio-1 {
   height: clamp(350px, 55vw, 735px) !important;
   aspect-ratio: unset !important;
@@ -2845,7 +2847,7 @@ nav {
 
 @media (min-width: 1898px) {
    .height-ratio-1 { height: clamp(1001px, 52vw, 1417px) !important; }
-    .height-ratio-2 { height: clamp(464px, 50vw, 576px) !important; }
+    .height-ratio-2 { height: clamp(408px, 50vw, 448px) !important; }
 
 
 }
