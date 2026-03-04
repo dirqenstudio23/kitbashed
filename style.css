@@ -884,7 +884,7 @@
         .rolling-cards-module__image-showcase {
         z-index: 999;
         position: absolute;
-        right: -90px;
+        right: -0;
         bottom: -45px;
         width: 1000px;
         height: 425px;
@@ -946,20 +946,7 @@
             transform: translatey(0px);
         }
         }
-        @keyframes shadow {
-        0% {
-            width: 180px;
-            box-shadow: 0px 10px 8px rgba(0, 0, 0, .8);
-        }
-        50% {
-            width: 150px;
-            box-shadow: 0px 10px 8px rgba(0, 0, 0, .5);
-        }
-        100% {
-            width: 180px;
-            box-shadow: 0px 10px 8px rgba(0, 0, 0, .8);
-        }
-        }
+
         /* ============================================
         RESPONSIVE BREAKPOINTS
         ============================================ */
