@@ -711,7 +711,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
         }
         .rolling-cards-module__container {
         width: 100%;
@@ -721,6 +720,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
         margin-bottom: 60px;
+        padding: 20px;
         }
         .rolling-cards-module__card {
         background: #fff;
@@ -827,7 +827,6 @@
         }
         .rolling-cards-module__bottom-section {
         background: transparent;
-        padding: 40px;
         text-align: left;
         position: relative;
         }
@@ -842,6 +841,7 @@
         }
         .rolling-cards-module__cta-button {
         background: #a4d233;
+            border-radius: 50px;
         color: #000;
         border: none;
         padding: 15px 40px;
@@ -2269,6 +2269,5 @@
   margin-top: 2.01% !important;
 }
 }
-
 
 
