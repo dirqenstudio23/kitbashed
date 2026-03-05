@@ -1,5 +1,5 @@
 /* ===== SITE HEADER ===== */
-nav .page-title a {
+nav .gallery-title a, nav .page-title a {
 
  font-weight: 400 !important;
 }
