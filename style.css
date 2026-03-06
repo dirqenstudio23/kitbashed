@@ -978,7 +978,7 @@
             font-size: 33px;
         }
         .rolling-cards-module__card {
-        padding: 50px 50px;
+        padding: 40px 35px;
         }
         .rolling-cards-module__card-list-item {
         font-size: 20px;
@@ -994,26 +994,24 @@
             min-height: 220px;
         }
         .rolling-cards-module__card-title {
-            font-size: 20px;
+            font-size: 35px;
         }
         .rolling-cards-module__bottom-section {
             padding: 30px 20px !important;
         }
         .rolling-cards-module__image-showcase {
-            position: static !important;
             margin-top: 40px;
-            width: 100% !important;
-            height: 300px;
-            right: auto !important;
-            bottom: auto !important;
+        width: 100% !important;
+        height: 302px;
+        right: 0;
+        bottom: 70px;
         }
         .rolling-cards-module__showcase-item {
-            position: relative;
-            height: 300px;
-            position: absolute !important;
+                    height: 300px;
+        position: absolute !important;
         top: 0;
-        left: 450px;
-        width: 250px !important;
+        left: 377px;
+        width: 314px !important;
         }
         .rolling-cards-module__showcase-item img {
             height: 300px;
@@ -1115,7 +1113,7 @@
         min-height: auto !important;
         }
         .rolling-cards-module__card-title {
-            font-size: 24px !important;
+            font-size: 35px !important;
             line-height: 1.2 !important;
             margin-bottom: 20px !important;
         }
@@ -2144,6 +2142,12 @@
 }
 
 @media (max-width: 1440px) {
+    .masthead {
+    min-height: 450px !important;
+}
+    .rolling-cards-module__card {
+    padding: 50px 40px;
+}
     .pt-80 {
     padding-top: 5.556% !important;
 }
@@ -2169,6 +2173,9 @@
 }
 
 @media (max-width: 1024px) {
+     .masthead {
+    min-height: 450px !important;
+}
     .pt-80   {
     padding-top: 7.814% !important;
 }

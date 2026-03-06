@@ -1088,10 +1088,11 @@ nav {
     padding-top: 44px;
     padding-right: 5%; }
     .masthead h1 {
-      font-size: 34px;
-      line-height: 31px;
-      margin-bottom: 0px;
-      margin-top: 20px; }
+      font-size: 58px;
+        line-height: 65px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    } }
     .masthead p {
       font-size: 15px;
       line-height: 19px;
@@ -1101,7 +1102,7 @@ nav {
     padding-top: 40px; }
   .masthead-arrow-container {
     margin-bottom: 19px;
-    margin-top: 13px; } }
+    margin-top: 13px; }
 
 @media (max-width: 540px) {
   .masthead {
@@ -1109,10 +1110,10 @@ nav {
     padding-top: 38px;
     margin-bottom: 0px; }
     .masthead h1 {
-      font-size: 29px;
-      line-height: 26px;
-      margin-bottom: 0px;
-      margin-top: 18px; }
+              font-size: 46px;
+        line-height: 45px;
+        margin-bottom: 0px;
+        margin-top: 18px;}
     .masthead p {
       font-size: 14px;
       line-height: 20px;
@@ -2688,11 +2689,11 @@ nav {
   .standard-modules .modules .audio {
     padding-bottom: 0px;
     padding-top: 0px; }
-  .standard-modules .modules .text {
+  /* .standard-modules .modules .text {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 0px;
-    padding-top: 0px; }
+    padding-top: 0px; } */
   .standard-modules .modules .social_icons {
     padding-left: 5%;
     padding-right: 5%; } }
