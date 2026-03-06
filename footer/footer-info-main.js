@@ -4,5 +4,5 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(html => {
       document.getElementById('footer-info-main').innerHTML = html;
     })
-    .catch(err => console.error('Gagal load navbar:', err));
+    .catch(err => console.error('Failed load navbar:', err));
 });
