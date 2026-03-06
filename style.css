@@ -720,7 +720,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
         margin-bottom: 60px;
-        padding: 20px;
         }
         .rolling-cards-module__card {
         background: #fff;
