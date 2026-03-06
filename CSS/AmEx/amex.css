@@ -2476,8 +2476,8 @@ nav {
     padding-top: 0px; }
     .standard-modules .rich-text .sub-title,
     .standard-modules .rich-text .sub-title span {
-      font-size: 19px !important;
-      line-height: 24px !important; }
+      font-size: 27px !important;
+        line-height: 33px !important;}
   .standard-modules .rich-text .main-text,
   .standard-modules .rich-text div,
   .standard-modules .rich-text p {
@@ -2489,7 +2489,7 @@ nav {
     .standard-modules .rich-text div span,
     .standard-modules .rich-text p,
     .standard-modules .rich-text p span {
-      font-size: 14px !important;
+      font-size: 20px !important;
       line-height: 22px !important; }
   .standard-modules .rich-text .caption,
   .standard-modules .module-caption div,
