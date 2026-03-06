@@ -2227,6 +2227,9 @@
 }
 
 @media (max-width: 425px) {
+     .pt-m-20{
+      padding-top: 20px;
+    }
     .pt-80 {
     padding-top: 18.83% !important;
 }
