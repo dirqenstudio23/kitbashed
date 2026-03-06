@@ -3026,3 +3026,12 @@ nav {
 
 .other-projects .project-cover .details {
   align-items: center; }
+
+  @media (max-width: 360px) {
+    .masthead h1 {
+        font-size: 50px !important;
+        line-height: 55px !important;
+        margin-bottom: 0px;
+        margin-top: 18px;
+    }
+}
