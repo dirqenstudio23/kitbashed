@@ -39,13 +39,13 @@ nav .gallery-title a, nav .page-title a {
   width: 300px !important;
 
 }
-.footer-info .logo-wrap {
+/* .footer-info .logo-wrap {
   padding-bottom: 40px;
-}
+} */
 
 /* ===== MASTHEAD ===== */
 .masthead {
-  min-height: 650px !important;
+  min-height: 650px;
   padding-left: 0 !important;
 }
 
