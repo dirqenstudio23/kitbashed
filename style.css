@@ -2230,6 +2230,15 @@
      .pt-m-20{
       padding-top: 20px;
     }
+    .pt-m-40{
+      padding-top: 40px;
+    }
+    .pt-m-60{
+      padding-top: 60px;
+    }
+    .pt-m-80{
+      padding-top: 80px;
+    }
     .pt-80 {
     padding-top: 18.83% !important;
 }
