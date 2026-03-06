@@ -2495,6 +2495,10 @@ nav {
     padding-right: 5%; } }
 
 @media (max-width: 540px) {
+  .standard-modules .rich-text .sub-title,
+    .standard-modules .rich-text .sub-title span {
+      font-size: 27px !important;
+        line-height: 33px !important;}
   .splash-modules .rich-text .title {
     padding-bottom: 5px;
     padding-top: 0px; }
@@ -2520,8 +2524,8 @@ nav {
     .splash-modules .rich-text div span,
     .splash-modules .rich-text p,
     .splash-modules .rich-text p span {
-      font-size: 14px !important;
-      line-height: 20px !important; }
+      font-size: 20px !important;
+      line-height: 22px !important; }
   .splash-modules .rich-text .caption,
   .splash-modules .module-caption div,
   .splash-modules .module-caption p {
