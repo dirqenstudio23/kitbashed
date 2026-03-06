@@ -37,9 +37,11 @@ nav .gallery-title a, nav .page-title a {
   padding-bottom: 0px;
   padding-top: 0px;
   width: 300px !important;
-      padding-bottom: 40px;
-}
 
+}
+.footer-info .logo-wrap {
+  padding-bottom: 40px;
+}
 
 /* ===== MASTHEAD ===== */
 .masthead {
