@@ -2227,6 +2227,36 @@
 }
 
 @media (max-width: 425px) {
+    .embed-dimensions {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+  }
+
+  .embed-aspect-ratio {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 56.25% !important;
+    overflow: visible !important;
+  }
+
+  .embed-dimensions iframe {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .embed-aspect-ratio {
+    position: relative !important;
+    height: 0 !important;
+    padding-bottom: 135.25% !important;
+  }
         .close-responsive-button {
         left: 12%;
     }
