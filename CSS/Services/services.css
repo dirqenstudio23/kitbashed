@@ -3068,10 +3068,10 @@ nav {
    flex-direction: column-reverse;
        align-items: flex-start !important;
 }
-.svc-item:nth-child(1) {
+/* .svc-item:nth-child(1) {
     border-bottom: 1px solid #1c1c1c;
 }
 .svc-item:nth-child(2) {
     border-bottom: 1px solid #1c1c1c;
-}
+} */
 }
