@@ -151,23 +151,39 @@ display: flex;
 </div>
 <script>
   function updateCartCount() {
-  fetch('/cart.json')
-    .then(res => res.json())
-    .then(data => {
-      const count = data.item_count || 0;
-      document.querySelectorAll('.cart-count').forEach(badge => {
-        if (count > 0) {
-          badge.textContent = count;
-          badge.style.display = 'inline';
-        } else {
-          badge.style.display = 'none';
-        }
+    const count = parseInt(localStorage.getItem('bc_cart_count') || '0');
+    document.querySelectorAll('.cart-count').forEach(badge => {
+      if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'inline';
+      } else {
+        badge.style.display = 'none';
+      }
+    });
+  }
+
+  function syncCartFromDOM() {
+    const items = document.querySelectorAll('.cart-item');
+    if (items.length > 0) {
+      let total = 0;
+      document.querySelectorAll('.product-quantity').forEach(input => {
+        total += parseInt(input.value) || 0;
       });
-    })
-    .catch(() => {});
-}
+      localStorage.setItem('bc_cart_count', total);
+    } else if (window.location.pathname === '/cart') {
+      localStorage.setItem('bc_cart_count', '0');
+    }
+  }
+
+  syncCartFromDOM();
   updateCartCount();
-  setInterval(updateCartCount, 3000);
+
+  document.addEventListener('change', function(e) {
+    if (e.target.classList.contains('product-quantity')) {
+      setTimeout(syncCartFromDOM, 500);
+      setTimeout(updateCartCount, 500);
+    }
+  });
 </script>
     </header>
   <div class="header-placeholder"></div>
