@@ -111,26 +111,7 @@ display: flex;
     line-height:1;
   ">0</span>
 </a>
-<script>
- function updateCartCount() {
-  fetch('/cart.json')
-    .then(res => res.json())
-    .then(data => {
-      const count = data.item_count || 0;
-      document.querySelectorAll('.cart-count').forEach(badge => {
-        if (count > 0) {
-          badge.textContent = count;
-          badge.style.display = 'inline';
-        } else {
-          badge.style.display = 'none';
-        }
-      });
-    })
-    .catch(() => {});
-}
-  updateCartCount();
-  setInterval(updateCartCount, 3000);
-</script>
+
         </div>
 </div>
 <div class="header-nav-mobile">
@@ -162,6 +143,12 @@ display: flex;
     line-height:1;
   ">0</span>
 </a>
+
+        </div>
+        </div>
+        </div>
+        </div>
+</div>
 <script>
   function updateCartCount() {
   fetch('/cart.json')
@@ -182,10 +169,5 @@ display: flex;
   updateCartCount();
   setInterval(updateCartCount, 3000);
 </script>
-        </div>
-        </div>
-        </div>
-        </div>
-</div>
     </header>
   <div class="header-placeholder"></div>
