@@ -1088,10 +1088,11 @@ nav {
     padding-top: 44px;
     padding-right: 5%; }
     .masthead h1 {
-      font-size: 34px;
-      line-height: 31px;
-      margin-bottom: 0px;
-      margin-top: 20px; }
+      font-size: 58px;
+        line-height: 65px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    } }
     .masthead p {
       font-size: 15px;
       line-height: 19px;
@@ -1101,7 +1102,7 @@ nav {
     padding-top: 40px; }
   .masthead-arrow-container {
     margin-bottom: 19px;
-    margin-top: 13px; } }
+    margin-top: 13px; }
 
 @media (max-width: 540px) {
   .masthead {
@@ -1109,10 +1110,10 @@ nav {
     padding-top: 38px;
     margin-bottom: 0px; }
     .masthead h1 {
-      font-size: 29px;
-      line-height: 26px;
-      margin-bottom: 0px;
-      margin-top: 18px; }
+        font-size: 60px;
+        line-height: 65px;
+        margin-bottom: 0px;
+        margin-top: 18px;}
     .masthead p {
       font-size: 14px;
       line-height: 20px;
@@ -2453,8 +2454,8 @@ nav {
     padding-top: 5px; }
     .splash-modules .rich-text .sub-title,
     .splash-modules .rich-text .sub-title span {
-      font-size: 16px !important;
-      line-height: 19px !important; }
+      font-size: 27px !important;
+        line-height: 33px !important; }
   .splash-modules .rich-text .main-text,
   .splash-modules .rich-text div,
   .splash-modules .rich-text p {
@@ -2466,8 +2467,8 @@ nav {
     .splash-modules .rich-text div span,
     .splash-modules .rich-text p,
     .splash-modules .rich-text p span {
-      font-size: 14px !important;
-      line-height: 20px !important; }
+      font-size: 20px !important;
+        line-height: 22px !important; }
   .splash-modules .rich-text .caption,
   .splash-modules .module-caption div,
   .splash-modules .module-caption p {
@@ -2688,11 +2689,11 @@ nav {
   .standard-modules .modules .audio {
     padding-bottom: 0px;
     padding-top: 0px; }
-  .standard-modules .modules .text {
+  /* .standard-modules .modules .text {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 0px;
-    padding-top: 0px; }
+    padding-top: 0px; } */
   .standard-modules .modules .social_icons {
     padding-left: 5%;
     padding-right: 5%; } }
@@ -2703,15 +2704,15 @@ nav {
     padding-top: 0px; }
     .standard-modules .rich-text .title,
     .standard-modules .rich-text .title span {
-      font-size: 14px !important;
-      line-height: 20px !important; }
+    font-size: 20px !important;
+        line-height: 22px !important; }
   .standard-modules .rich-text .sub-title {
     padding-bottom: 0px;
     padding-top: 0px; }
     .standard-modules .rich-text .sub-title,
     .standard-modules .rich-text .sub-title span {
-      font-size: 19px !important;
-      line-height: 24px !important; }
+     font-size: 27px !important;
+        line-height: 33px !important;}
   .standard-modules .rich-text .main-text,
   .standard-modules .rich-text div,
   .standard-modules .rich-text p {
@@ -2723,9 +2724,8 @@ nav {
     .standard-modules .rich-text div span,
     .standard-modules .rich-text p,
     .standard-modules .rich-text p span {
-      font-size: 20px !important;
-      line-height: 22px !important;
-      }
+     font-size: 20px !important;
+        line-height: 22px !important;}
   .standard-modules .rich-text .caption,
   .standard-modules .module-caption div,
   .standard-modules .module-caption p {
@@ -3026,3 +3026,52 @@ nav {
 
 .other-projects .project-cover .details {
   align-items: center; }
+
+  @media (max-width: 360px) {
+    .masthead h1 {
+        font-size: 50px !important;
+        line-height: 55px !important;
+        margin-bottom: 0px;
+        margin-top: 18px;
+    }
+}
+
+ .svc-img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 328px;
+  object-fit: contain;
+  display: block;
+  animation: svc-float 3s ease-in-out infinite;
+}
+@media (max-width: 1440px) {
+  .svc-block
+ {
+    width: 100% !important;
+}
+
+}
+@media (max-width: 1024px) {
+  .svc-block
+ {
+    width: 100% !important;
+}
+.svc-item {
+   gap: 25px !important;
+}
+}
+@media (max-width: 580px) {
+.svc-item {
+    display: flex !important;
+    align-items: center;
+    gap: 70px;
+   flex-direction: column-reverse;
+       align-items: flex-start !important;
+}
+.svc-item:nth-child(1) {
+    border-bottom: 1px solid #1c1c1c;
+}
+.svc-item:nth-child(2) {
+    border-bottom: 1px solid #1c1c1c;
+}
+}
