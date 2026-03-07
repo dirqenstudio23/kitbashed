@@ -1191,7 +1191,7 @@
             margin: 20px 0 !important;
         }
         .close-responsive-button {
-            left: 12%;
+            left: 12.6%;
         }
             .site-header {
                 margin-top: 0px;
@@ -2227,6 +2227,9 @@
 }
 
 @media (max-width: 425px) {
+        .close-responsive-button {
+        left: 12%;
+    }
      .pt-m-20{
       padding-top: 20px !important;
     }
