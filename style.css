@@ -2095,18 +2095,51 @@
 }
 
 
-@media (min-width: 1898px) {
+@media (min-width: 1921px) {
+  .standard-modules .rich-text .caption {
+   font-size: 108px !important;
+        line-height: 115px !important;
+  }
+  .sub-title span, .svc-title{
+       font-size: 86px !important;
+        line-height: 102px !important;
+  }
+  .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li  {
+      font-size: 73px !important;
+        line-height: 85px !important;
+  }
+  .site-footer .rich-text div {
+    font-size: 32px !important;
+    line-height: 46px !important;
+  }
+  .brand-asset-task-item::before {
+   width: 60px;
+        height: 60px;
+
+}
+.brand-asset-task-item {
+      gap: 17px;
+}
+.custom-auto-slider-arrow img {
+    width: 30px;
+}
+.dyn-arrow img {
+    width: 30px;
+}
+}
+
+@media (min-width: 1898px) and (max-width: 1920px) {
   .standard-modules .rich-text .caption {
     font-size: 72px !important;
     line-height: 75px !important;
   }
   .sub-title span, .svc-title{
-    font-size: 54px !important;
-            line-height: 63px !important;
+          font-size: 62px !important;
+        line-height: 67px !important;
   }
   .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item, .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li  {
-    font-size: 33px !important;
-    line-height: 43px !important;
+           font-size: 53px !important;
+        line-height: 64px !important;
   }
   .site-footer .rich-text div {
     font-size: 32px !important;
