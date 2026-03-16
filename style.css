@@ -668,7 +668,7 @@
         }
         .cta-thankyou-button-link {
             padding: 11px 30px;
-            font-size: 23px;
+            font-size: 15px;
         }
         }
         /* Animation keyframes */
@@ -720,6 +720,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
         margin-bottom: 60px;
+        padding: 20px;
         }
         .rolling-cards-module__card {
         background: #fff;
@@ -741,7 +742,7 @@
         text-align: left;
         text-transform: none;
         margin: 0 0 56px;
-        font-size: 40px;
+        font-size: 52px;
         line-height: 1.1;
         }
         .rolling-cards-module__card-title .rolling-cards-module__highlight {
@@ -782,16 +783,16 @@
         padding-left: 0;
         }
         .rolling-cards-module__card-list-item {
-            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 400;
-        text-align: left;
-        text-transform: none;
-        margin-top: 10px;
-        padding-left: 20px;
-        position: relative;
-        }
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+    margin-top: 15px;
+    padding-left: 20px;
+    position: relative;
+}
         .rolling-cards-module__card-list-item:before {
         content: "•";
         position: absolute;
@@ -978,7 +979,7 @@
             font-size: 33px;
         }
         .rolling-cards-module__card {
-        padding: 40px 35px;
+        padding: 50px 50px;
         }
         .rolling-cards-module__card-list-item {
         font-size: 20px;
@@ -994,24 +995,26 @@
             min-height: 220px;
         }
         .rolling-cards-module__card-title {
-            font-size: 35px;
+            font-size: 20px;
         }
         .rolling-cards-module__bottom-section {
             padding: 30px 20px !important;
         }
         .rolling-cards-module__image-showcase {
+            position: static !important;
             margin-top: 40px;
-        width: 100% !important;
-        height: 302px;
-        right: 0;
-        bottom: 70px;
+            width: 100% !important;
+            height: 300px;
+            right: auto !important;
+            bottom: auto !important;
         }
         .rolling-cards-module__showcase-item {
-                    height: 300px;
-        position: absolute !important;
+            position: relative;
+            height: 300px;
+            position: absolute !important;
         top: 0;
-        left: 377px;
-        width: 314px !important;
+        left: 450px;
+        width: 250px !important;
         }
         .rolling-cards-module__showcase-item img {
             height: 300px;
@@ -1113,7 +1116,7 @@
         min-height: auto !important;
         }
         .rolling-cards-module__card-title {
-            font-size: 35px !important;
+            font-size: 24px !important;
             line-height: 1.2 !important;
             margin-bottom: 20px !important;
         }
@@ -1191,7 +1194,7 @@
             margin: 20px 0 !important;
         }
         .close-responsive-button {
-            left: 12.6%;
+            left: 12%;
         }
             .site-header {
                 margin-top: 0px;
@@ -1854,7 +1857,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     font-size: 38px !important;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     text-transform: none;
     }
@@ -2094,7 +2097,6 @@
     }
 }
 
-
 @media (min-width: 1921px) {
   .standard-modules .rich-text .caption {
    font-size: 108px !important;
@@ -2155,7 +2157,6 @@
 }
 
 }
-
 @media (min-width: 1441px) and (max-width: 1897px) {
   .standard-modules .rich-text .caption {
     font-size: 64px !important;
@@ -2179,12 +2180,6 @@
 }
 
 @media (max-width: 1440px) {
-    .masthead {
-    min-height: 450px !important;
-}
-    .rolling-cards-module__card {
-    padding: 50px 40px;
-}
     .pt-80 {
     padding-top: 5.556% !important;
 }
@@ -2210,9 +2205,6 @@
 }
 
 @media (max-width: 1024px) {
-     .masthead {
-    min-height: 450px !important;
-}
     .pt-80   {
     padding-top: 7.814% !important;
 }
@@ -2264,49 +2256,6 @@
 }
 
 @media (max-width: 425px) {
-    .embed-dimensions {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    max-height: none !important;
-  }
-
-  .embed-aspect-ratio {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    height: 0 !important;
-    overflow: visible !important;
-  }
-
-  .embed-dimensions iframe {
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .embed-aspect-ratio {
-    position: relative !important;
-    height: 0 !important;
-  }
-        .close-responsive-button {
-        left: 12%;
-    }
-     .pt-m-20{
-      padding-top: 20px !important;
-    }
-    .pt-m-40{
-      padding-top: 40px !important;
-    }
-    .pt-m-60{
-      padding-top: 60px !important;
-    }
-    .pt-m-80{
-      padding-top: 80px !important;
-    }
     .pt-80 {
     padding-top: 18.83% !important;
 }
@@ -2356,18 +2305,4 @@
 }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-    .masthead {
-    min-height: 350px !important;
-}
-.rolling-cards-module__card-title {
-  margin: 0 0 16px;
-}
-    .rolling-cards-module__card-title {
-        font-size: 23px !important;
-    }
-    .rolling-cards-module__card-list-item {
-    font-size: 18px;
 
-}
-}
