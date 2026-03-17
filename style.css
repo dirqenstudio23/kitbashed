@@ -760,21 +760,21 @@
         .rolling-cards-module__card--3 .rolling-cards-module__highlight {
         color: #ff4757;
         }
-        .rolling-cards-module.rcm-hover-green .rolling-cards-module__card .rolling-cards-module__highlight {
+        /* .rolling-cards-module.rcm-hover-green .rolling-cards-module__card .rolling-cards-module__highlight {
         color: #a4d233 !important;
-        }
+        } */
         .rolling-cards-module.rcm-hover-green .rolling-cards-module__card--1:hover .rolling-cards-module__highlight {
         color: #000 !important;
         }
-        .rolling-cards-module.rcm-hover-purple .rolling-cards-module__card .rolling-cards-module__highlight {
+        /* .rolling-cards-module.rcm-hover-purple .rolling-cards-module__card .rolling-cards-module__highlight {
         color: #9d4edd !important;
-        }
+        } */
         .rolling-cards-module.rcm-hover-purple .rolling-cards-module__card--2:hover .rolling-cards-module__highlight {
         color: #000 !important;
         }
-        .rolling-cards-module.rcm-hover-red .rolling-cards-module__card .rolling-cards-module__highlight {
+        /* .rolling-cards-module.rcm-hover-red .rolling-cards-module__card .rolling-cards-module__highlight {
         color: #ff4757 !important;
-        }
+        } */
         .rolling-cards-module.rcm-hover-red .rolling-cards-module__card--3:hover .rolling-cards-module__highlight {
         color: #000 !important;
         }
