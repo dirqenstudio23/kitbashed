@@ -47,6 +47,9 @@ display: flex;
       <div class="page-title">
         <a href="/products">Store</a>
       </div>
+      <div class="page-title">
+        <a href="/blog">Blog</a>
+      </div>
     <div class="nav-text">
       <div class="logo-wrap" style="width: 100% !important;" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
           <div class="logo e2e-site-logo-text logo-image  " style=" padding-bottom: 20px; ">
@@ -87,6 +90,9 @@ display: flex;
       </div>
       <div class="page-title">
         <a href="/products">Store</a>
+      </div>
+      <div class="page-title">
+        <a href="/blog">Blog</a>
       </div>
       </div>
         </nav>
@@ -149,6 +155,43 @@ display: flex;
         </div>
         </div>
 </div>
+<script>
+  function updateCartCount() {
+    const count = parseInt(localStorage.getItem('bc_cart_count') || '0');
+    document.querySelectorAll('.cart-count').forEach(badge => {
+      if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'inline';
+      } else {
+        badge.style.display = 'none';
+      }
+    });
+  }
 
+  function syncCartFromDOM() {
+    const items = document.querySelectorAll('.cart-item');
+    if (items.length > 0) {
+      let total = 0;
+      document.querySelectorAll('.product-quantity').forEach(input => {
+        total += parseInt(input.value) || 0;
+      });
+      localStorage.setItem('bc_cart_count', total);
+    } else if (window.location.pathname === '/cart') {
+      localStorage.setItem('bc_cart_count', '0');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    syncCartFromDOM();
+    updateCartCount();
+  });
+
+  document.addEventListener('change', function(e) {
+    if (e.target.classList.contains('product-quantity')) {
+      setTimeout(syncCartFromDOM, 500);
+      setTimeout(updateCartCount, 500);
+    }
+  });
+</script>
     </header>
   <div class="header-placeholder"></div>
