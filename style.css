@@ -588,26 +588,26 @@
         opacity: 0.95;
         }
         /* CTA Button */
-        .cta-thankyou-button-link {
-        font-family: helvetica, sans-serif !important;
-        margin-top: 3.41%;
-        display: inline-block;
-        padding: 14px 40px;
-        background: transparent;
-        color: #ffffff;
-        font-size: 33px;
-        font-weight: 400;
-        text-decoration: none;
-        border: 2px solid #ffffff;
-        border-radius: 50px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        }
+       .cta-thankyou-button-link {
+    font-family: helvetica, sans-serif !important;
+    margin-top: 3.41%;
+    display: inline-block;
+    padding: 14px 40px;
+    background: #a4d233;
+    color: #000;
+    font-size: 33px;
+    font-weight: 400;
+    text-decoration: none;
+    /* border: 2px solid #ffffff; */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
         /* Button hover effect */
         .cta-thankyou-button-link:hover {
-        background: #ffffff;
+        background: #a4d233;
         color: #7C3AED;
         transform: translateY(-2px);
         }
@@ -617,7 +617,7 @@
         box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
         }
         /* Ripple effect on button */
-        .cta-thankyou-button-link::before {
+        /* .cta-thankyou-button-link::before {
         content: '';
         position: absolute;
         top: 50%;
@@ -628,7 +628,7 @@
         background: rgba(255, 255, 255, 0.3);
         transform: translate(-50%, -50%);
         transition: width 0.6s, height 0.6s;
-        }
+        } */
         .cta-thankyou-button-link:hover::before {
         width: 300px;
         height: 300px;
