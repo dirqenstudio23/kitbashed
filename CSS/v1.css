@@ -2009,7 +2009,7 @@ nav {
     width: 550px !important;
     height: auto !important;
     display: block !important;
-    object-fit: unset !important;
+    object-fit: cover !important;
 }
     @media (max-width: 425px) {
 
