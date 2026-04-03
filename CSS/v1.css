@@ -2006,8 +2006,8 @@ nav {
    .height-ratio-1 .img-slider-ratio-slide img,
 .height-ratio-2 .img-slider-ratio-slide img,
     .height-ratio-3 .img-slider-ratio-slide img {
-    width: 550px !important;
-    height: auto !important;
+    width: auto !important;
+    height: 550px !important;
     display: block !important;
     object-fit: cover !important;
 }
