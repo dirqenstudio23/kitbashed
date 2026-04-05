@@ -1703,8 +1703,8 @@ nav {
     }
  /* End Text */
 
- .dyn-arrow img, .custom-auto-slider-arrow img {
-    width: 31px;
+ .dyn-arrow img, .custom-auto-slider-arrow img, .custom-slider-v3-arrow img {
+    width: 31px !important;
  }
   @media (min-width: 769px) and (max-width: 1440px) {
         .p-section {
