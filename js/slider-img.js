@@ -1,5 +1,5 @@
 
- 
+
 (function () {
   'use strict';
 
@@ -7,7 +7,7 @@
 
   function initSlider(wrapper) {
     const slides    = Array.from(wrapper.querySelectorAll('.dyn-slide'));
-    const duration  = parseInt(wrapper.dataset.autoplay) || 5000;
+    const duration  = parseInt(wrapper.dataset.autoplay) || 3000;
     const isCentered = wrapper.classList.contains('slider-centered');
 
     if (!slides.length) return;
@@ -106,4 +106,4 @@
   } else {
     initAll();
   }
-})(); 
+})();
