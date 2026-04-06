@@ -814,10 +814,10 @@
     font-weight: 600;
     text-decoration: none;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+        border: 1px solid #00000000;
         }
         .rolling-cards-module__cta-button:hover {
         background: #8fba2d;
-        transform: translateY(-2px);
         }
         .rolling-cards-module__download-text {
         font-size: 14px;
@@ -833,13 +833,13 @@
         .rolling-cards-module__download-text a:hover {
         text-decoration: underline;
         }
-        .rolling-cards-module.rcm-theme-green .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+        .rolling-cards-module.rcm-theme-green .rolling-cards-module__download-text a .rolling-cards-module__highlight .purple {
         color: #a4d233;
         }
-        .rolling-cards-module.rcm-theme-purple .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+        .rolling-cards-module.rcm-theme-purple .rolling-cards-module__download-text a .rolling-cards-module__highlight .purple {
         color: #9d4edd;
         }
-        .rolling-cards-module.rcm-theme-red .rolling-cards-module__download-text a .rolling-cards-module__highlight {
+        .rolling-cards-module.rcm-theme-red .rolling-cards-module__download-text a .rolling-cards-module__highlight .purple {
         color: #ff4757;
         }
         /* Image showcase - Default Desktop */
@@ -879,6 +879,15 @@
         }
         .rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
         background: #ff4757;
+        }
+         .rolling-cards-module.rcm-theme-green .purple {
+        color: #a4d233;
+        }
+        .rolling-cards-module.rcm-theme-purple .purple {
+        color: #9d4edd;
+        }
+        .rolling-cards-module.rcm-theme-red .purple {
+        color: #ff4757;
         }
         .img-float {
         display: block;
