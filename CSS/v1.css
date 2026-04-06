@@ -1991,7 +1991,9 @@ nav {
 }
  }
 
-
+.footer-info .logo-wrap {
+      padding-bottom: 40px !important;
+}
     .p-lr-4 {
       padding-left: 10%;
       padding-right: 10%;
