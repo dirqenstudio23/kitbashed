@@ -1,11 +1,39 @@
-  <style>
-    @media (max-width: 932px) {
-    .site-header {
-        margin-top: -18px !important;
+<style>
+    .header-nav-mobile, .header-nav-mobile .logo-wrap {
+         display: none;
+    }
+.hamburger-mobile {
+   display: none;
+}
+    .chart-icon-mobile {
+   display: none;
+}
+@media (max-width: 933px) {
+    .chart-icon-desktop {
+   display: none;
+}
+  .hamburger-mobile {
+   display: block;
+}
+    .chart-icon-mobile {
+   display: block;
+}
+.header-nav-mobile .logo-wrap {
+         display: block;
+    }
+.header-nav-mobile {
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+        .hamburger-click-area {
+        display: flex;
+        gap: 20px;
+        align-items: center;
     }
 }
 </style>
-<div class="js-responsive-nav">
+ <div class="js-responsive-nav">
     <div class="responsive-nav">
       <div class="close-responsive-click-area js-close-responsive-nav">
         <div class="close-responsive-button"></div>
@@ -13,15 +41,12 @@
           <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
                 <div class="gallery-title">
                   <a href="/work">Work</a></div>
-      <div class="page-title">
+           <div class="page-title">
         <a href="/services">Services</a>
       </div>
-     <div class="page-title">
+      <div class="page-title">
         <a href="/products">Store</a>
       </div>
-      <!-- <div class="page-title">
-        <a href="/">Back to site</a>
-      </div> -->
     <div class="nav-text">
       <div class="logo-wrap" style="width: 100% !important;" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
           <div class="logo e2e-site-logo-text logo-image  " style=" padding-bottom: 20px; ">
@@ -54,32 +79,114 @@
           </nav>
     </div>
   </div>
-    <header class="site-header js-site-header p-section" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+    <header class="site-header js-site-header p-4" style=" margin-left: 4%; margin-right: 4%; width: 92%;" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
         <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
                 <div class="gallery-title"><a href="/work">Work</a></div>
       <div class="page-title">
         <a href="/services">Services</a>
       </div>
-       <div class="page-title">
+      <div class="page-title">
         <a href="/products">Store</a>
       </div>
-      <!-- <div class="page-title">
-        <a href="/">Back to site</a>
-      </div> -->
+
+      </div>
         </nav>
-        <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
-          <div class="logo e2e-site-logo-text logo-image  " >
+        <div class="chart-icon-desktop">
+        <div class="chart-logo">
+<div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image  ">
     <a href="/" class="image-normal image-link">
       <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/697fcca366e7ca4428b15ff7.gif" alt="Kitbashed Creative">
     </a>
           </div>
         </div>
+         <a href="/cart" id="cart-icon-link" style="display:flex !important; align-items:center; gap:8px; color:white !important; text-decoration:none; overflow:visible !important;">
+  <svg aria-hidden="true" fill="white" width="23" height="20" viewBox="0 0.5 22.28 20.03" style="display:block !important; min-width:23px; overflow:visible !important;">
+    <path d="M0 1.4375C0 0.929688 0.390625 0.5 0.9375 0.5H2.69531C3.55469 0.5 4.33594 1.00781 4.6875 1.75H20.7422C21.7578 1.75 22.5 2.72656 22.2266 3.74219L20.625 9.67969C20.3125 10.9297 19.1797 11.75 17.9297 11.75H6.64062L6.875 12.8828C6.95312 13.3125 7.34375 13.625 7.77344 13.625H19.0625C19.5703 13.625 20 14.0547 20 14.5625C20 15.1094 19.5703 15.5 19.0625 15.5H7.77344C6.44531 15.5 5.27344 14.5625 5.03906 13.2344L3.00781 2.64844C2.96875 2.49219 2.85156 2.375 2.69531 2.375H0.9375C0.390625 2.375 0 1.98438 0 1.4375ZM5 18.625C5 17.9609 5.35156 17.375 5.9375 17.0234C6.48438 16.6719 7.22656 16.6719 7.8125 17.0234C8.35938 17.375 8.75 17.9609 8.75 18.625C8.75 19.3281 8.35938 19.9141 7.8125 20.2656C7.22656 20.6172 6.48438 20.6172 5.9375 20.2656C5.35156 19.9141 5 19.3281 5 18.625ZM18.125 16.75C18.7891 16.75 19.375 17.1406 19.7266 17.6875C20.0781 18.2734 20.0781 19.0156 19.7266 19.5625C19.375 20.1484 18.7891 20.5 18.125 20.5C17.4219 20.5 16.8359 20.1484 16.4844 19.5625C16.1328 19.0156 16.1328 18.2734 16.4844 17.6875C16.8359 17.1406 17.4219 16.75 18.125 16.75Z"></path>
+  </svg>
+  <span class="cart-count" style="
+    display:none;
+    color:white;
+    font-size:20px;
+    font-weight:400;
+    line-height:1;
+  ">0</span>
+</a>
+
+        </div>
+</div>
+<div class="header-nav-mobile">
+    <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image  ">
+    <a href="/" class="image-normal image-link">
+      <img src="https://storage.googleapis.com/msgsndr/itKG3eaIJ0EN2gMc8cZd/media/697fcca366e7ca4428b15ff7.gif" alt="Kitbashed Creative">
+    </a>
+          </div>
+        </div>
+         <div class="hamburger-mobile">
         <div class="hamburger-click-area js-hamburger">
           <div class="hamburger">
             <i></i>
             <i></i>
             <i></i>
           </div>
+          <div class="chart-icon-mobile">
+            <div class="chart-logo">
+         <a href="/cart" id="cart-icon-link" style="display:flex !important; align-items:center; gap:8px; color:white !important; text-decoration:none; overflow:visible !important;">
+  <svg aria-hidden="true" fill="white" width="23" height="20" viewBox="0 0.5 22.28 20.03" style="display:block !important; min-width:23px; overflow:visible !important;">
+    <path d="M0 1.4375C0 0.929688 0.390625 0.5 0.9375 0.5H2.69531C3.55469 0.5 4.33594 1.00781 4.6875 1.75H20.7422C21.7578 1.75 22.5 2.72656 22.2266 3.74219L20.625 9.67969C20.3125 10.9297 19.1797 11.75 17.9297 11.75H6.64062L6.875 12.8828C6.95312 13.3125 7.34375 13.625 7.77344 13.625H19.0625C19.5703 13.625 20 14.0547 20 14.5625C20 15.1094 19.5703 15.5 19.0625 15.5H7.77344C6.44531 15.5 5.27344 14.5625 5.03906 13.2344L3.00781 2.64844C2.96875 2.49219 2.85156 2.375 2.69531 2.375H0.9375C0.390625 2.375 0 1.98438 0 1.4375ZM5 18.625C5 17.9609 5.35156 17.375 5.9375 17.0234C6.48438 16.6719 7.22656 16.6719 7.8125 17.0234C8.35938 17.375 8.75 17.9609 8.75 18.625C8.75 19.3281 8.35938 19.9141 7.8125 20.2656C7.22656 20.6172 6.48438 20.6172 5.9375 20.2656C5.35156 19.9141 5 19.3281 5 18.625ZM18.125 16.75C18.7891 16.75 19.375 17.1406 19.7266 17.6875C20.0781 18.2734 20.0781 19.0156 19.7266 19.5625C19.375 20.1484 18.7891 20.5 18.125 20.5C17.4219 20.5 16.8359 20.1484 16.4844 19.5625C16.1328 19.0156 16.1328 18.2734 16.4844 17.6875C16.8359 17.1406 17.4219 16.75 18.125 16.75Z"></path>
+  </svg>
+  <span class="cart-count" style="
+    display:none;
+    color:white;
+    font-size:20px;
+    font-weight:400;
+    line-height:1;
+  ">0</span>
+</a>
+
         </div>
+        </div>
+        </div>
+        </div>
+</div>
+<script>
+  function updateCartCount() {
+    const count = parseInt(localStorage.getItem('bc_cart_count') || '0');
+    document.querySelectorAll('.cart-count').forEach(badge => {
+      if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'inline';
+      } else {
+        badge.style.display = 'none';
+      }
+    });
+  }
+
+  function syncCartFromDOM() {
+    const items = document.querySelectorAll('.cart-item');
+    if (items.length > 0) {
+      let total = 0;
+      document.querySelectorAll('.product-quantity').forEach(input => {
+        total += parseInt(input.value) || 0;
+      });
+      localStorage.setItem('bc_cart_count', total);
+    } else if (window.location.pathname === '/cart') {
+      localStorage.setItem('bc_cart_count', '0');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    syncCartFromDOM();
+    updateCartCount();
+  });
+
+  document.addEventListener('change', function(e) {
+    if (e.target.classList.contains('product-quantity')) {
+      setTimeout(syncCartFromDOM, 500);
+      setTimeout(updateCartCount, 500);
+    }
+  });
+</script>
     </header>
   <div class="header-placeholder"></div>
