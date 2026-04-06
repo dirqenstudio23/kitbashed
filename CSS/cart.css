@@ -171,7 +171,7 @@ nav .gallery-title a, nav .page-title a {
 .port-date {
   color: #FFFFFF;
   float: left;
-  font-family: helvetica, sans-serif;
+  font-family: Inter, sans-serif !important;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
