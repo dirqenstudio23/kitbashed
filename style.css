@@ -845,8 +845,8 @@
         .rolling-cards-module__image-showcase {
         z-index: 999;
         position: absolute;
-        right: -0;
-        bottom: -45px;
+        right: 0;
+        /* bottom: -45px; */
         width: 1000px;
         height: 425px;
         transition: all 0.5s ease;
