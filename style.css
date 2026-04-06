@@ -680,7 +680,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         padding: 20px;
         }
         .rolling-cards-module__card {
@@ -1234,7 +1234,7 @@
         }
         }
             .carousel-container {
-        padding: 15px 0 !important;
+        padding: 0px 0 !important;
         }
             .masthead {
         min-height: 650px;
