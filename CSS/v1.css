@@ -1680,7 +1680,7 @@ nav {
         letter-spacing: 0;
             font-weight: 700;
     }
-    .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
+    .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span,  .svc-list li {
          font-family: Inter, sans-serif !important;
         font-size: 35.27px !important;
         line-height: 45px !important;
@@ -1802,7 +1802,7 @@ nav {
         line-height: 34px !important;
         letter-spacing: -1.2px;
     }
-     .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
+     .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span,  .svc-list li {
          font-family: Inter, sans-serif !important;
         font-size: 28.27px !important;
         line-height: 36px !important;
@@ -1938,7 +1938,7 @@ nav {
         line-height: 24px !important;
         letter-spacing: -1.2px;
     }
-     .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span, .kbc-flow-list span, .svc-list li {
+     .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p,  .kbc-flow-module__inner span,  .svc-list li {
          font-family: Inter, sans-serif !important;
         font-size: 19px !important;
         line-height: 26px !important;
