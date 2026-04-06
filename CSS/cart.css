@@ -415,13 +415,7 @@ nav .gallery-title a, nav .page-title a {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 /* ---- Product Breadcrumb ---- */
 .product-breadcrumb {
