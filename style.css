@@ -1,49 +1,10 @@
-        /* @import url(https://db.onlinewebfonts.com/c/0d49fc455f4a8951a42daf952412a713?family=Helvetica+Neue+Regular);
-        .element {
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-        }
-        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5'); */
+
         body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif ;
+        font-family: Inter, sans-serif  ;
         }
-        .medium-text {
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 500;
-        }
-        .regular-text {
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-        font-weight: 400;
-        }
-        @font-face {
-        font-family: 'Helvetica Neue';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Helvetica Neue Regular'),
-                url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueReguler.woff2') format('woff2');
-        }
-        @font-face {
-        font-family: 'Helvetica Neue';
-        font-style: italic;
-        font-weight: 400;
-        src: local('Helvetica Neue Italic'),
-                url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueItalic.woff2') format('woff2');
-        }
-        @font-face {
-        font-family: 'Helvetica Neue';
-        font-style: normal;
-        font-weight: 700;
-        src: local('Helvetica Neue Bold'),
-                url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueBold.woff') format('woff');
-        }
-        @font-face {
-        font-family: 'Helvetica Neue';
-        font-style: normal;
-        font-weight: 500;
-        src: local('Helvetica Neue Medium'),
-                url('https://dirqenstudio23.github.io/kitbashed/font/HelveticaNeueMedium.woff') format('woff');
-        }
+
         .site-footer {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif !important;
+        font-family: Inter, sans-serif  !important;
         }
         .standard-modules .text {
         float: left;
@@ -736,7 +697,7 @@
         justify-content: flex-start;
         }
         .rolling-cards-module__card-title {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+        font-family: Inter, sans-serif ;
         font-weight: 500;
         font-style: normal;
         text-align: left;
@@ -783,7 +744,7 @@
         padding-left: 0;
         }
         .rolling-cards-module__card-list-item {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, sans-serif ;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -831,7 +792,7 @@
         position: relative;
         }
         .rolling-cards-module__bottom-title {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+        font-family: Inter, sans-serif ;
         font-weight: 400;
         font-size: 28px;
         line-height: 37px;
@@ -851,7 +812,7 @@
         transition: all 0.3s ease;
         margin-bottom: 20px;
         display: inline-block;
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+        font-family: Inter, sans-serif ;
         }
         .rolling-cards-module__cta-button:hover {
         background: #8fba2d;
@@ -861,7 +822,7 @@
         font-size: 14px;
             font-weight: 400;
         color: #999;
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+        font-family: Inter, sans-serif ;
         }
         .rolling-cards-module__download-text a {
         text-decoration: none;
@@ -1846,7 +1807,7 @@
     }
     .standard-modules .rich-text .caption
     {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, sans-serif ;
     line-height: 44px;
     font-style: normal;
     font-weight: 500;
@@ -1854,7 +1815,7 @@
     text-transform: none;
     }
     .sub-title span {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, sans-serif ;
     font-size: 38px !important;
     font-style: normal;
     font-weight: 500;
@@ -1862,7 +1823,7 @@
     text-transform: none;
     }
     .standard-modules .rich-text .main-text, .texteditor-inline-fontsize, .standard-modules .rich-text div, .standard-modules .rich-text p, .brand-asset-task-item {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, sans-serif ;
     font-size: 28px !important;
     font-style: normal;
         line-height: 40px;
