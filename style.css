@@ -717,13 +717,13 @@ body {
   transition: color 0.4s ease;
 }
 .rolling-cards-module__card--1 .rolling-cards-module__highlight {
-  color: #9d4edd;
+  color: #a4d233;
 }
 .rolling-cards-module__card--2 .rolling-cards-module__highlight {
-  color: #ff4757;
+  color: #9d4edd;
 }
 .rolling-cards-module__card--3 .rolling-cards-module__highlight {
-  color: #a4d233;
+  color: #ff4757;
 }
 /* .rolling-cards-module.rcm-hover-green .rolling-cards-module__card .rolling-cards-module__highlight {
         color: #a4d233 !important;
