@@ -870,27 +870,27 @@ body {
   opacity: 1;
 }
 .rolling-cards-module__showcase-item img {
-  height: 840px;
-  max-height: 840px;
+  height: 740px;
+  max-height: 740px;
   object-fit: contain;
 }
 .rolling-cards-module.rcm-theme-green .rolling-cards-module__cta-button {
-  background: #9d4edd;
-}
-.rolling-cards-module.rcm-theme-purple .rolling-cards-module__cta-button {
-  background: #ff4757;
-}
-.rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
   background: #a4d233;
 }
+.rolling-cards-module.rcm-theme-purple .rolling-cards-module__cta-button {
+  background: #9d4edd;
+}
+.rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
+  background: #ff4757;
+}
 .rolling-cards-module.rcm-theme-green .purple {
-  color: #9d4edd;
+  color: #a4d233;
 }
 .rolling-cards-module.rcm-theme-purple .purple {
-  color: #ff4757;
+  color: #9d4edd;
 }
 .rolling-cards-module.rcm-theme-red .purple {
-  color: #a4d233;
+  color: #ff4757;
 }
 .img-float {
   display: block;
