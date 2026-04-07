@@ -2298,7 +2298,7 @@ nav .link-title {
   .height-ratio-1 .img-slider-ratio-slide img,
   .height-ratio-2 .img-slider-ratio-slide img,
   .height-ratio-3 .img-slider-ratio-slide img {
-    width: 220px !important;
+    height: 100% !important;
   }
 }
 
