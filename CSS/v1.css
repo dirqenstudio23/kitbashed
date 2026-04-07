@@ -2166,6 +2166,9 @@ nav .link-title {
 }
 @media (max-width: 390px) {
   /* Gap */
+  .gap-20 {
+    gap: 10px !important;
+  }
   .gap-50 {
     gap: 50px !important;
   }
@@ -2203,7 +2206,7 @@ nav .link-title {
     padding: 0 20px !important;
   }
   .p-tab-section {
-    padding: 0 40px !important;
+    padding: 0 20px !important;
   }
   .pt-49 {
     padding-top: 20px !important;
@@ -2271,11 +2274,13 @@ nav .link-title {
     letter-spacing: 0px;
     margin-bottom: 22px !important;
   }
-
+  .site-footer ul {
+    padding-top: 0px;
+  }
   .site-footer .rich-text div {
     font-family: Inter, sans-serif !important;
     font-size: 22px !important;
-    line-height: 35px !important;
+    line-height: 24px !important;
     letter-spacing: -0.9px;
   }
   .cta-thankyou-button-link {
@@ -2288,7 +2293,7 @@ nav .link-title {
     height: 37px;
   }
   .list2 .brand-asset-task-item::before {
-    margin-top: 8px !important;
+    margin-top: 0px !important;
     width: 37px;
     height: 37px;
   }
@@ -2299,6 +2304,9 @@ nav .link-title {
   .height-ratio-2 .img-slider-ratio-slide img,
   .height-ratio-3 .img-slider-ratio-slide img {
     height: 100% !important;
+  }
+  .embed-dimensions {
+    width: 91px;
   }
 }
 
@@ -2329,17 +2337,17 @@ nav .link-title {
   height: auto !important;
 }
 
-.height-ratio-1 .img-slider-ratio,
+/* .height-ratio-1 .img-slider-ratio,
 .height-ratio-2 .img-slider-ratio,
 .height-ratio-3 .img-slider-ratio {
   height: auto !important;
-}
+} */
 
 .height-ratio-1 .img-slider-ratio-slide img,
 .height-ratio-2 .img-slider-ratio-slide img,
 .height-ratio-3 .img-slider-ratio-slide img {
   width: auto !important;
-  height: 550px !important;
+  height: 550px;
   display: block !important;
   object-fit: cover !important;
 }
