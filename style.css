@@ -717,13 +717,13 @@ body {
   transition: color 0.4s ease;
 }
 .rolling-cards-module__card--1 .rolling-cards-module__highlight {
-  color: #a4d233;
-}
-.rolling-cards-module__card--2 .rolling-cards-module__highlight {
   color: #9d4edd;
 }
-.rolling-cards-module__card--3 .rolling-cards-module__highlight {
+.rolling-cards-module__card--2 .rolling-cards-module__highlight {
   color: #ff4757;
+}
+.rolling-cards-module__card--3 .rolling-cards-module__highlight {
+  color: #a4d233;
 }
 /* .rolling-cards-module.rcm-hover-green .rolling-cards-module__card .rolling-cards-module__highlight {
         color: #a4d233 !important;
@@ -764,7 +764,7 @@ body {
   left: 0;
 }
 .rolling-cards-module__card--1:hover {
-  background: #a4d233;
+  background: #9d4edd;
   color: #fff;
   transform: scale(1.05);
   z-index: 10;
@@ -773,7 +773,7 @@ body {
   color: #000 !important;
 }
 .rolling-cards-module__card--2:hover {
-  background: #9d4edd;
+  background: #ff4757;
   color: #fff;
   transform: scale(1.05);
   z-index: 10;
@@ -782,7 +782,7 @@ body {
   color: #000 !important;
 }
 .rolling-cards-module__card--3:hover {
-  background: #ff4757;
+  background: #a4d233;
   color: #fff;
   transform: scale(1.05);
   z-index: 10;
@@ -851,7 +851,7 @@ body {
   z-index: 999;
   position: absolute;
   right: 200px;
-  top: -140px;
+  top: -190px;
   width: 1000px;
   height: 600px;
   transition: all 0.5s ease;
@@ -871,27 +871,27 @@ body {
 }
 .rolling-cards-module__showcase-item img {
   max-width: 100%;
-  height: 600px;
-  max-height: 600px;
+  height: 640px;
+  max-height: 640px;
   object-fit: contain;
 }
 .rolling-cards-module.rcm-theme-green .rolling-cards-module__cta-button {
-  background: #a4d233;
-}
-.rolling-cards-module.rcm-theme-purple .rolling-cards-module__cta-button {
   background: #9d4edd;
 }
-.rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
+.rolling-cards-module.rcm-theme-purple .rolling-cards-module__cta-button {
   background: #ff4757;
 }
-.rolling-cards-module.rcm-theme-green .purple {
-  color: #a4d233;
+.rolling-cards-module.rcm-theme-red .rolling-cards-module__cta-button {
+  background: #a4d233;
 }
-.rolling-cards-module.rcm-theme-purple .purple {
+.rolling-cards-module.rcm-theme-green .purple {
   color: #9d4edd;
 }
-.rolling-cards-module.rcm-theme-red .purple {
+.rolling-cards-module.rcm-theme-purple .purple {
   color: #ff4757;
+}
+.rolling-cards-module.rcm-theme-red .purple {
+  color: #a4d233;
 }
 .img-float {
   display: block;
