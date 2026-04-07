@@ -2164,7 +2164,7 @@ nav .link-title {
     width: 275px !important;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   /* Gap */
   .gap-50 {
     gap: 50px !important;
