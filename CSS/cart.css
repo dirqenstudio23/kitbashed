@@ -1,7 +1,7 @@
 /* ===== SITE HEADER ===== */
-nav .gallery-title a, nav .page-title a {
-
- font-weight: 400 !important;
+nav .gallery-title a,
+nav .page-title a {
+  font-weight: 400 !important;
 }
 .site-header {
   justify-content: space-between;
@@ -11,7 +11,7 @@ nav .gallery-title a, nav .page-title a {
 .site-header:after,
 .logo-wrap:after {
   clear: both;
-  content: '';
+  content: "";
   display: none;
 }
 
@@ -20,7 +20,6 @@ nav .gallery-title a, nav .page-title a {
     margin-top: -18px !important;
   }
 }
-
 
 /* ===== LOGO ===== */
 .chart-logo {
@@ -37,7 +36,6 @@ nav .gallery-title a, nav .page-title a {
   padding-bottom: 0px;
   padding-top: 0px;
   width: 300px !important;
-
 }
 /* .footer-info .logo-wrap {
   padding-bottom: 40px;
@@ -46,9 +44,7 @@ nav .gallery-title a, nav .page-title a {
 /* ===== MASTHEAD ===== */
 .masthead {
   min-height: 650px;
-
 }
-
 
 /* ===== KBC FLOW MODULE ===== */
 .kbc-flow-module {
@@ -94,7 +90,6 @@ nav .gallery-title a, nav .page-title a {
   filter: invert(0) brightness(1);
 }
 
-
 /* ===== KBC FLOW LIST ===== */
 .kbc-flow-list {
   display: grid;
@@ -127,7 +122,6 @@ nav .gallery-title a, nav .page-title a {
   height: auto;
   display: block;
 }
-
 
 /* ===== PROJECT COVER ===== */
 .project-cover .details-inner:after,
@@ -162,14 +156,13 @@ nav .gallery-title a, nav .page-title a {
   }
 }
 
-
 /* ===== MISC ===== */
 .link-transition {
   display: block !important;
 }
 
 .port-date {
-  color: #FFFFFF;
+  color: #ffffff;
   float: left;
   font-family: Inter, sans-serif !important;
   font-size: 24px;
@@ -193,7 +186,6 @@ nav .gallery-title a, nav .page-title a {
 .svc-title {
   font-weight: 500 !important;
 }
-
 
 /* ===== PRODUCTS PAGE ===== */
 .products-header {
@@ -411,11 +403,11 @@ nav .gallery-title a, nav .page-title a {
    ============================================ */
 
 /* ---- Reset & Base ---- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-
 
 /* ---- Product Breadcrumb ---- */
 .product-breadcrumb {
@@ -436,19 +428,19 @@ nav .gallery-title a, nav .page-title a {
 
 /* ---- Main Product Container ---- */
 .product-container {
- display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: start;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 24px 0 80px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 80px 0;
 }
 
 /* ---- Product Images (Left Column) ---- */
 .product-breadcrumb-image {
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 }
 .product-images {
   width: 100%;
@@ -499,7 +491,7 @@ nav .gallery-title a, nav .page-title a {
 }
 
 .status-primary {
-  background-color: #FF3D00;
+  background-color: #ff3d00;
   color: #ffffff;
 }
 
@@ -601,7 +593,7 @@ nav .gallery-title a, nav .page-title a {
   display: block;
   width: 100%;
   padding: 16px 24px;
-  background-color: #FF3D00;
+  background-color: #ff3d00;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -610,14 +602,16 @@ nav .gallery-title a, nav .page-title a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
   text-align: center;
   line-height: 1;
 }
 
 #add-to-cart-button:hover,
 .add-to-cart-button:hover {
-  background-color: #CC3100;
+  background-color: #cc3100;
 }
 
 #add-to-cart-button:active,
@@ -646,7 +640,9 @@ nav .gallery-title a, nav .page-title a {
   font-size: 13px;
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .button--minimal:hover {
@@ -764,7 +760,7 @@ nav .gallery-title a, nav .page-title a {
 }
 
 .status-primary.product-list-thumb-status {
-  background-color: #FF3D00;
+  background-color: #ff3d00;
 }
 
 /* Product Info Below Image */
