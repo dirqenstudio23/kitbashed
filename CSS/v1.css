@@ -1883,6 +1883,12 @@ nav .link-title {
 .width-l-section {
   max-width: 800px !important;
 }
+.width-l-section-800 {
+  max-width: 800px !important;
+}
+.width-l-section-600 {
+  max-width: 600px !important;
+}
 .p-section {
   padding: 0 234px !important;
 }
