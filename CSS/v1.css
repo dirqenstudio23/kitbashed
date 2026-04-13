@@ -1265,6 +1265,7 @@ nav .link-title {
   text-align: left;
   text-transform: none;
   padding-bottom: 40px;
+  letter-spacing: -4px;
 }
 .masthead p {
   color: #ccc;
@@ -1280,7 +1281,7 @@ nav .link-title {
 }
 
 .masthead-contents {
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 .masthead-buttons {
