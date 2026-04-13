@@ -2360,6 +2360,15 @@ nav .link-title {
   .caption {
     padding-bottom: 20px !important;
   }
+  .standard-modules .tree .tree-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-slider-ratio-slide {
+    width: 350px !important;
+    height: 400px !important;
+  }
 }
 
 @media (max-width: 768px) {
