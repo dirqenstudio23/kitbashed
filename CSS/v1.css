@@ -2309,6 +2309,10 @@ nav .link-title {
   .embed-dimensions {
     width: 91px;
   }
+  .caption {
+    gap: 3px !important;
+    flex-direction: column !important;
+  }
 }
 
 .footer-info .logo-wrap {
