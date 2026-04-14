@@ -766,7 +766,7 @@ body {
 .rolling-cards-module__card--1:hover {
   background: #9c4edc;
   color: #fff;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   z-index: 10;
 }
 .rolling-cards-module__card--1:hover .rolling-cards-module__highlight {
@@ -775,7 +775,7 @@ body {
 .rolling-cards-module__card--2:hover {
   background: #ff4743;
   color: #fff;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   z-index: 10;
 }
 .rolling-cards-module__card--2:hover .rolling-cards-module__highlight {
@@ -784,7 +784,7 @@ body {
 .rolling-cards-module__card--3:hover {
   background: #a5d135;
   color: #fff;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   z-index: 10;
 }
 .rolling-cards-module__card--3:hover .rolling-cards-module__highlight {
