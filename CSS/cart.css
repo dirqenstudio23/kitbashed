@@ -204,6 +204,7 @@ nav .page-title a {
   margin-bottom: 20px;
   float: none !important;
   display: block;
+  letter-spacing: -5px;
 }
 
 /* Category Nav */

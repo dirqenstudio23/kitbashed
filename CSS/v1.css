@@ -1967,7 +1967,7 @@ nav .link-title {
 .sub-title span,
 .svc-title {
   font-family: Inter, sans-serif !important;
-  font-size: 47px !important;
+  font-size: 34px !important;
   line-height: 37px !important;
   letter-spacing: -1.2px;
 }
@@ -1987,7 +1987,7 @@ nav .link-title {
   font-family: Inter, sans-serif !important;
   font-size: 35.27px !important;
   line-height: 45px !important;
-  letter-spacing: 0px;
+  letter-spacing: -1.2px;
 }
 .brand-asset-task-item {
   font-family: Inter, sans-serif !important;
