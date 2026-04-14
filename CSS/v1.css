@@ -1938,7 +1938,7 @@ nav .link-title {
 }
 .cta-thankyou-button-link:hover {
   background: #fff;
-  color: #000;
+  color: #000 !important;
   border: 2px solid #ffffff;
 }
 .cta-thankyou-button-link {

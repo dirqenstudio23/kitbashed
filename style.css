@@ -580,7 +580,6 @@ body {
 .cta-thankyou-button-link:hover {
   background: #a5d135;
   color: #7c3aed;
-  transform: translateY(-2px);
 }
 /* Button active/click effect */
 .cta-thankyou-button-link:active {
