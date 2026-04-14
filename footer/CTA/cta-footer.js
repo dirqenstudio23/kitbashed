@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((html) => {
       document.getElementById("cta-footer").innerHTML = html;
     })
-    .catch((err) => console.error("Gagal load navbar:", err));
+    .catch((err) => console.error("Failed to load CTA footer:", err));
 });

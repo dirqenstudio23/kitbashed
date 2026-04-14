@@ -535,6 +535,11 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(107, 76, 230, 0.4);
 }
+.w-600 {
+  width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 /* Main heading */
 .cta-thankyou-heading-text {
   color: #ffffff;
