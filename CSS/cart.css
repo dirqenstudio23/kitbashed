@@ -445,6 +445,7 @@ nav .page-title a {
 }
 .product-images {
   width: 100%;
+  min-height: 900px !important;
 }
 
 .zoom-image-container {
