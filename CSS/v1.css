@@ -1937,8 +1937,9 @@ nav .link-title {
   text-transform: none;
 }
 .cta-thankyou-button-link:hover {
-  background: transparent;
-  transform: translateY(-2px);
+  background: #fff;
+  color: #000;
+  border: 2px solid #ffffff;
 }
 .cta-thankyou-button-link {
   font-family: Inter, sans-serif !important;
@@ -1947,6 +1948,16 @@ nav .link-title {
   padding: 14px 40px;
   background: transparent;
   border: 2px solid #ffffff;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: -2px;
 }
 
 .brand-asset-task-item::before {
