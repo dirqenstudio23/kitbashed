@@ -1930,6 +1930,7 @@ nav .link-title {
 /* End Padding */
 .sub-title2 {
   font-size: 42px;
+  font-weight: 500;
 }
 .standard-modules .rich-text a:hover {
   color: #ffffff;
