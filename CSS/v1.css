@@ -2314,7 +2314,8 @@ nav .link-title {
     width: 37px;
     height: 37px;
   }
-  .dyn-arrow img {
+  .dyn-arrow img,
+  .custom-auto-slider-arrow img {
     width: 23px !important;
   }
   .height-ratio-1 .img-slider-ratio-slide img,
