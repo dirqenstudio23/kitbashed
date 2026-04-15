@@ -468,7 +468,7 @@ nav .page-title a {
 }
 
 .zoom-image-container:hover img.product-image {
-  transform: scale(1.03);
+  transform: scale(0);
 }
 
 /* ---- Product Detail (Right Column) ---- */
