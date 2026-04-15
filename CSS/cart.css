@@ -455,7 +455,6 @@ nav .page-title a {
   border-radius: 8px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  cursor: zoom-in;
 }
 
 .zoom-image-container img.product-image {
