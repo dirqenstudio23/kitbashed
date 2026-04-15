@@ -2386,7 +2386,7 @@ nav .link-title {
     height: 400px !important;
   }
   .w-img {
-    width: 100%;
+    width: 100% !important;
   }
   .height-ratio-4 .img-slider-ratio-slide img {
     height: 100% !important;
