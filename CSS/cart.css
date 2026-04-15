@@ -742,7 +742,7 @@ nav .page-title a {
 }
 
 .product-list-link:hover .product-list-image {
-  transform: scale(1.04);
+  transform: scale(1);
 }
 
 /* Coming Soon / Sold Out Badge */
