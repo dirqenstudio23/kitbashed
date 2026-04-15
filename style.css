@@ -1466,6 +1466,12 @@ body {
   .custom-slider-v3-arrow img {
     width: 18px;
   }
+  .w-600 {
+  width: 100% !important;
+}
+.sub-title2 {
+    font-size: 24px;
+    letter-spacing: -1.2px;
 }
 /* slider cloak 2 */
 .custom-auto-slider-wrapper {
