@@ -1470,7 +1470,7 @@ body {
     width: 100% !important;
   }
   .sub-title2 {
-    font-size: 24px;
+    font-size: 24px !important;
     letter-spacing: -1.2px;
   }
 }
