@@ -2202,7 +2202,7 @@ nav .link-title {
     gap: 90px !important;
   }
   .gap-100 {
-    gap: 100px !important;
+    gap: 40px !important;
   }
   .gap-110 {
     display: flex !important;
@@ -2315,7 +2315,7 @@ nav .link-title {
     height: 37px;
   }
   .dyn-arrow img {
-    width: 23px;
+    width: 23px !important;
   }
   .height-ratio-1 .img-slider-ratio-slide img,
   .height-ratio-2 .img-slider-ratio-slide img,
@@ -2390,6 +2390,9 @@ nav .link-title {
   }
   .height-ratio-4 .img-slider-ratio-slide img {
     height: 100% !important;
+  }
+  .w-desc {
+    width: 100%;
   }
 }
 
