@@ -2382,8 +2382,14 @@ nav .link-title {
     flex-direction: column;
   }
   .img-slider-ratio-slide {
-    width: 350px !important;
+    width: 100% !important;
     height: 400px !important;
+  }
+  .w-img {
+    width: 100%;
+  }
+  .height-ratio-4 .img-slider-ratio-slide img {
+    height: 100% !important;
   }
 }
 
