@@ -1324,10 +1324,11 @@ nav .link-title {
     margin-bottom: 0px;
   }
   .masthead h1 {
-    font-size: 33px;
-    line-height: 31px;
+    font-size: 36px;
+    line-height: 44px;
     margin-bottom: 0px;
     margin-top: 18px;
+    letter-spacing: -3px;
   }
   .masthead p {
     font-size: 14px;
