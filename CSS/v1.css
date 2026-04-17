@@ -2183,7 +2183,7 @@ nav .link-title {
     width: 275px !important;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .hamburger-click-area {
     right: 20px;
   }
@@ -2378,7 +2378,7 @@ nav .link-title {
   display: block !important;
   object-fit: cover !important;
 }
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .caption {
     padding-bottom: 20px !important;
   }
