@@ -1324,11 +1324,12 @@ nav .link-title {
     margin-bottom: 0px;
   }
   .masthead h1 {
-    font-size: 36px;
+    font-size: 41px;
     line-height: 44px;
     margin-bottom: 0px;
     margin-top: 18px;
     letter-spacing: -3px;
+    padding-bottom: 10px;
   }
   .masthead p {
     font-size: 14px;
@@ -2182,7 +2183,10 @@ nav .link-title {
     width: 275px !important;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
+  .hamburger-click-area {
+    right: 20px;
+  }
   /* Gap */
   .gap-20 {
     gap: 10px !important;
@@ -2221,7 +2225,7 @@ nav .link-title {
     max-width: 400px !important;
   }
   .p-section {
-    padding: 0 20px !important;
+    padding: 0 30px !important;
   }
   .p-tab-section {
     padding: 0 20px !important;
