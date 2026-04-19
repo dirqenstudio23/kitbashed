@@ -2334,7 +2334,7 @@ nav .link-title {
     height: 100% !important;
   }
   .embed-dimensions {
-    width: 91px;
+    width: 350px !important;
   }
   .caption {
     gap: 3px !important;
