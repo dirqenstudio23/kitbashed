@@ -2309,6 +2309,11 @@ nav .link-title {
     font-size: 24px !important;
   }
   /* End Text */
+  .brand-asset-task-item::before {
+    margin-top: 0 !important;
+    width: 37px;
+    height: 37px;
+  }
   .list1 .brand-asset-task-item::before {
     margin-top: 0px !important;
     width: 37px;
